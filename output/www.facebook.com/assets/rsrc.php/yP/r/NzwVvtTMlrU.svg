@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <!-- fds-positive -->
+    <rect x="0" y="3" width="7" height="1" fill="#00a400" />
+    <rect x="3" y="0" width="1" height="7" fill="#00a400" />
+    <!-- fds-negative -->
+    <rect x="9" y="15" width="7" height="1" fill="#FA383E" />
+    <!-- fds-gray-30 -->
+    <rect x="0" y="0" width="22.627417" height="1" fill="#BEC3C9" transform="translate(0,16) rotate(-45)" />
+</svg>

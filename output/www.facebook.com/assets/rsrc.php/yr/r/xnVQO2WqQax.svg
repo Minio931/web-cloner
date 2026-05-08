@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <mask id="hole">
+        <rect width="100%" height="100%" fill="white"/>
+        <circle cx="8" cy="8" r="7" fill="black" mask="url(#hole)"/>
+        <rect x="4" y="7.5" width="8" height="1" fill="white"/>
+    </mask>
+    <!-- fds-negative -->
+    <circle cx="8" cy="8" r="8" fill="#FA383E" mask="url(#hole)"/>
+</svg>

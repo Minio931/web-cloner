@@ -1,0 +1,3264 @@
+<!doctype html>
+<html
+  lang="en-US"
+  style="
+    font-size: 100%;
+    --saturation-factor: 1;
+    dynamic-range-limit: no-limit;
+    --custom-zoom: 100;
+    --devtools-sidebar-width: 0px;
+  "
+  class="platform-web theme-dark theme-darker images-dark density-default font-size-16 has-webkit-scrollbar full-motion app-focused visual-refresh"
+  data-rh="lang,style,class"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=3.0"
+      name="viewport"
+    />
+
+    <link rel="preconnect" href="https://cdn.discordapp.com" />
+    <link rel="preconnect" href="https://images-ext-1.discordapp.net" />
+
+    <!-- section:seometa -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Discord" />
+    <meta
+      property="og:title"
+      content="Discord - Group Chat That’s All Fun &amp; Games"
+    />
+    <meta
+      property="og:description"
+      content="Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/assets/og_img_discord_home.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@discord" />
+    <meta name="twitter:creator" content="@discord" />
+    <!-- endsection -->
+
+    <!-- plugin:globalConstants -->
+    <!-- plugin:meticulous -->
+    <!-- plugin:fastConnect -->
+
+    <!-- section:title -->
+    <title>Discord</title>
+    <!-- endsection -->
+    <link href="assets/assets/favicon.ico" rel="icon" />
+    <link href="assets/assets/66257.8b0038a835cd3d10.css" rel="stylesheet" />
+    <link href="assets/assets/72667.d8bf600441cd0b25.css" rel="stylesheet" />
+    <link href="assets/assets/82749.b74387629a592491.css" rel="stylesheet" />
+    <link href="assets/assets/98298.0a9d4ec7d9bb93fe.css" rel="stylesheet" />
+    <link href="assets/assets/96888.d904648f7187d935.css" rel="stylesheet" />
+    <link href="assets/assets/web.963868d2501da9b6.css" rel="stylesheet" />
+    <link
+      data-rspack="discord_app:chunk-94459"
+      rel="stylesheet"
+      href="assets/assets/6f7713d5b10d7cb3.css"
+    />
+    <link
+      data-rspack="discord_app:chunk-16539"
+      rel="stylesheet"
+      href="assets/assets/16539.d7346ab78f10a7e1.css"
+    />
+    <link
+      data-rspack="discord_app:chunk-86142"
+      rel="stylesheet"
+      href="assets/assets/07db9f0bc7d37fad.css"
+    />
+    <link
+      data-rspack="discord_app:chunk-99063"
+      rel="stylesheet"
+      href="assets/assets/a06f142ee55db4f5.css"
+    />
+    <link
+      data-rspack="discord_app:chunk-24927"
+      rel="stylesheet"
+      href="assets/assets/bfc1b176bce14e46.css"
+    />
+    <style type="text/css">
+      ogvjs { display: inline-block; position: relative; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0,0,0,0);
+    </style>
+  </head>
+
+  <body>
+    <div
+      data-live-announcer="true"
+      style="
+        border: 0px;
+        clip: rect(0px, 0px, 0px, 0px);
+        clip-path: inset(50%);
+        margin: 0px -1px -1px 0px;
+        overflow: hidden;
+        padding: 0px;
+        position: absolute;
+        white-space: nowrap;
+      "
+    >
+      <div role="log" aria-live="assertive" aria-relevant="additions">
+        <div>QR code login is now ready</div>
+      </div>
+      <div role="log" aria-live="polite" aria-relevant="additions"></div>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="app-mount" class="appMount__51fd7">
+      <svg
+        viewBox="0 0 1 1"
+        aria-hidden="true"
+        style="
+          position: absolute;
+          pointer-events: none;
+          top: -1px;
+          left: -1px;
+          width: 1px;
+          height: 1px;
+        "
+      >
+        <mask
+          id="svg-mask-squircle"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <path
+            fill="white"
+            d="M0 0.464C0 0.301585 0 0.220377 0.0316081 0.158343C0.0594114 0.103776 0.103776 0.0594114 0.158343 0.0316081C0.220377 0 0.301585 0 0.464 0H0.536C0.698415 0 0.779623 0 0.841657 0.0316081C0.896224 0.0594114 0.940589 0.103776 0.968392 0.158343C1 0.220377 1 0.301585 1 0.464V0.536C1 0.698415 1 0.779623 0.968392 0.841657C0.940589 0.896224 0.896224 0.940589 0.841657 0.968392C0.779623 1 0.698415 1 0.536 1H0.464C0.301585 1 0.220377 1 0.158343 0.968392C0.103776 0.940589 0.0594114 0.896224 0.0316081 0.841657C0 0.779623 0 0.698415 0 0.536V0.464Z"
+          ></path>
+        </mask>
+        <mask
+          id="svg-mask-header-bar-badge-top"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="1" height="1"></rect>
+          <circle fill="black" cx="0.75" cy="0.25" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-header-bar-badge-bottom"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="1" height="1"></rect>
+          <circle fill="black" cx="0.75" cy="0.75" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-voice-user-summary-item"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" width="1" height="1"></rect>
+          <circle
+            fill="black"
+            cx="1.2083333333333333"
+            cy="0.5"
+            r="0.5416666666666666"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-vertical-fade"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <linearGradient
+            id="svg-mask-vertical-fade-gradient"
+            gradientTransform="rotate(90)"
+            x1="0"
+            x2="1"
+            y1="0"
+            y2="0"
+          >
+            <stop offset="0%" stop-color="white"></stop>
+            <stop offset="100%" stop-color="black"></stop>
+          </linearGradient>
+          <rect
+            fill="url(#svg-mask-vertical-fade-gradient)"
+            x="0"
+            y="0"
+            width="1"
+            height="1"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-panel-button"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="1" height="1"></rect>
+          <circle fill="black" cx="0.75" cy="0.75" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-channel-call-control-button"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.8214285714285714"
+            cy="0.8214285714285714"
+            r="0.25"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-channel-call-control-button-badge-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6428571428571429"
+            y="-0.07142857142857142"
+            width="0.42857142857142855"
+            height="0.42857142857142855"
+            rx="0.21428571428571427"
+            ry="0.21428571428571427"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-channel-call-control-button-badge-22"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.5357142857142857"
+            y="-0.07142857142857142"
+            width="0.5357142857142857"
+            height="0.42857142857142855"
+            rx="0.21428571428571427"
+            ry="0.21428571428571427"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-channel-call-control-button-badge-29"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.4107142857142857"
+            y="-0.07142857142857142"
+            width="0.6607142857142857"
+            height="0.42857142857142855"
+            rx="0.21428571428571427"
+            ry="0.21428571428571427"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-default"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.8125" cy="0.8125" r="0.3125"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7604166666666667"
+            cy="0.7604166666666667"
+            r="0.2604166666666667"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.5"
+            y="0.3125"
+            width="0.625"
+            height="0.8125"
+            rx="0.1625"
+            ry="0.1625"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.5"
+            y="0.34375"
+            width="0.5208333333333334"
+            height="0.6770833333333334"
+            rx="0.1625"
+            ry="0.1625"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.21875"
+            y="0.5"
+            width="1.1875"
+            height="0.625"
+            rx="0.3125"
+            ry="0.3125"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.265625"
+            y="0.5"
+            width="0.9895833333333334"
+            height="0.5208333333333334"
+            rx="0.0968967013888889"
+            ry="0.0968967013888889"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.85" cy="0.85" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7916666666666667"
+            cy="0.7916666666666667"
+            r="0.20833333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6"
+            y="0.45"
+            width="0.5"
+            height="0.65"
+            rx="0.13"
+            ry="0.13"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.5833333333333333"
+            y="0.45833333333333337"
+            width="0.4166666666666667"
+            height="0.5416666666666667"
+            rx="0.13"
+            ry="0.13"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.375"
+            y="0.6"
+            width="0.95"
+            height="0.5"
+            rx="0.25"
+            ry="0.25"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.3958333333333333"
+            y="0.5833333333333333"
+            width="0.7916666666666666"
+            height="0.4166666666666667"
+            rx="0.0920138888888889"
+            ry="0.0920138888888889"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.2916666666666667"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7777777777777779"
+            cy="0.7777777777777779"
+            r="0.24305555555555558"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.5416666666666666"
+            y="0.375"
+            width="0.5833333333333334"
+            height="0.75"
+            rx="0.15"
+            ry="0.15"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.5347222222222222"
+            y="0.3958333333333333"
+            width="0.48611111111111116"
+            height="0.625"
+            rx="0.15"
+            ry="0.15"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.2916666666666667"
+            y="0.5416666666666666"
+            width="1.0833333333333333"
+            height="0.5833333333333334"
+            rx="0.2916666666666667"
+            ry="0.2916666666666667"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.3263888888888889"
+            y="0.5347222222222222"
+            width="0.9027777777777778"
+            height="0.48611111111111116"
+            rx="0.091772762345679"
+            ry="0.091772762345679"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.84375" cy="0.84375" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7864583333333334"
+            cy="0.7864583333333334"
+            r="0.20833333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.59375"
+            y="0.4375"
+            width="0.5"
+            height="0.65625"
+            rx="0.13125"
+            ry="0.13125"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.578125"
+            y="0.4479166666666667"
+            width="0.4166666666666667"
+            height="0.546875"
+            rx="0.13125"
+            ry="0.13125"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.359375"
+            y="0.59375"
+            width="0.96875"
+            height="0.5"
+            rx="0.25"
+            ry="0.25"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.3828125"
+            y="0.578125"
+            width="0.8072916666666667"
+            height="0.4166666666666667"
+            rx="0.08875868055555558"
+            ry="0.08875868055555558"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.85" cy="0.85" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7916666666666667"
+            cy="0.7916666666666667"
+            r="0.20833333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6"
+            y="0.45"
+            width="0.5"
+            height="0.65"
+            rx="0.13"
+            ry="0.13"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.5833333333333333"
+            y="0.45833333333333337"
+            width="0.4166666666666667"
+            height="0.5416666666666667"
+            rx="0.13"
+            ry="0.13"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.375"
+            y="0.6"
+            width="0.95"
+            height="0.5"
+            rx="0.25"
+            ry="0.25"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.3958333333333333"
+            y="0.5833333333333333"
+            width="0.7916666666666666"
+            height="0.4166666666666667"
+            rx="0.0876736111111111"
+            ry="0.0876736111111111"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-44"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.8636363636363636"
+            cy="0.8636363636363636"
+            r="0.22727272727272727"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-44"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.803030303030303"
+            cy="0.803030303030303"
+            r="0.1893939393939394"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-44"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6363636363636364"
+            y="0.5"
+            width="0.45454545454545453"
+            height="0.5909090909090909"
+            rx="0.11818181818181818"
+            ry="0.11818181818181818"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-44"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.6136363636363636"
+            y="0.5"
+            width="0.3787878787878788"
+            height="0.4924242424242425"
+            rx="0.11818181818181818"
+            ry="0.11818181818181818"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-44"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.4318181818181818"
+            y="0.6363636363636364"
+            width="0.8636363636363636"
+            height="0.45454545454545453"
+            rx="0.22727272727272727"
+            ry="0.22727272727272727"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-44"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.4431818181818182"
+            y="0.6136363636363636"
+            width="0.7196969696969697"
+            height="0.3787878787878788"
+            rx="0.0869203397612488"
+            ry="0.0869203397612488"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.875"
+            cy="0.875"
+            r="0.20833333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.8125"
+            cy="0.8125"
+            r="0.17361111111111113"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6666666666666666"
+            y="0.5416666666666666"
+            width="0.4166666666666667"
+            height="0.5416666666666666"
+            rx="0.10833333333333334"
+            ry="0.10833333333333334"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.6388888888888888"
+            y="0.5347222222222222"
+            width="0.34722222222222227"
+            height="0.4513888888888889"
+            rx="0.10833333333333334"
+            ry="0.10833333333333334"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.4791666666666667"
+            y="0.6666666666666666"
+            width="0.7916666666666666"
+            height="0.4166666666666667"
+            rx="0.20833333333333334"
+            ry="0.20833333333333334"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.4826388888888889"
+            y="0.6388888888888888"
+            width="0.6597222222222222"
+            height="0.34722222222222227"
+            rx="0.08634741512345678"
+            ry="0.08634741512345678"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.8392857142857143"
+            cy="0.8392857142857143"
+            r="0.19642857142857142"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7827380952380953"
+            cy="0.7827380952380953"
+            r="0.1636904761904762"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6428571428571429"
+            y="0.5178571428571429"
+            width="0.39285714285714285"
+            height="0.5178571428571429"
+            rx="0.10357142857142858"
+            ry="0.10357142857142858"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.6190476190476191"
+            y="0.5148809523809524"
+            width="0.3273809523809524"
+            height="0.4315476190476191"
+            rx="0.10357142857142858"
+            ry="0.10357142857142858"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.45535714285714285"
+            y="0.6428571428571429"
+            width="0.7678571428571429"
+            height="0.39285714285714285"
+            rx="0.19642857142857142"
+            ry="0.19642857142857142"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.46279761904761907"
+            y="0.6190476190476191"
+            width="0.6398809523809524"
+            height="0.3273809523809524"
+            rx="0.08576920351473921"
+            ry="0.08576920351473921"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.19444444444444445"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7777777777777779"
+            cy="0.7777777777777779"
+            r="0.16203703703703703"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6388888888888888"
+            y="0.5277777777777778"
+            width="0.3888888888888889"
+            height="0.5"
+            rx="0.1"
+            ry="0.1"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.6157407407407407"
+            y="0.5231481481481481"
+            width="0.32407407407407407"
+            height="0.4166666666666667"
+            rx="0.1"
+            ry="0.1"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.4722222222222222"
+            y="0.6388888888888888"
+            width="0.7222222222222222"
+            height="0.3888888888888889"
+            rx="0.19444444444444445"
+            ry="0.19444444444444445"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.47685185185185186"
+            y="0.6157407407407407"
+            width="0.6018518518518519"
+            height="0.32407407407407407"
+            rx="0.08520876200274347"
+            ry="0.08520876200274347"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.85" cy="0.85" r="0.175"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7916666666666667"
+            cy="0.7916666666666667"
+            r="0.14583333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.675"
+            y="0.575"
+            width="0.35"
+            height="0.45"
+            rx="0.09"
+            ry="0.09"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.6458333333333334"
+            y="0.5625"
+            width="0.2916666666666667"
+            height="0.375"
+            rx="0.09"
+            ry="0.09"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.525"
+            y="0.675"
+            width="0.65"
+            height="0.35"
+            rx="0.175"
+            ry="0.175"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.5208333333333334"
+            y="0.6458333333333334"
+            width="0.5416666666666667"
+            height="0.2916666666666667"
+            rx="0.08485243055555552"
+            ry="0.08485243055555552"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.1875"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7777777777777779"
+            cy="0.7777777777777779"
+            r="0.15625"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6458333333333334"
+            y="0.5416666666666666"
+            width="0.375"
+            height="0.4791666666666667"
+            rx="0.09583333333333334"
+            ry="0.09583333333333334"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.6215277777777778"
+            y="0.5347222222222222"
+            width="0.3125"
+            height="0.3993055555555556"
+            rx="0.09583333333333334"
+            ry="0.09583333333333334"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.4895833333333333"
+            y="0.6458333333333334"
+            width="0.6875"
+            height="0.375"
+            rx="0.1875"
+            ry="0.1875"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.4913194444444444"
+            y="0.6215277777777778"
+            width="0.5729166666666667"
+            height="0.3125"
+            rx="0.0846896701388889"
+            ry="0.0846896701388889"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-round-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.16666666666666666"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-round-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.7777777777777779"
+            cy="0.7777777777777779"
+            r="0.1388888888888889"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-mobile-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.6666666666666666"
+            y="0.5666666666666667"
+            width="0.3333333333333333"
+            height="0.43333333333333335"
+            rx="0.08666666666666667"
+            ry="0.08666666666666667"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-mobile-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.6388888888888888"
+            y="0.5555555555555556"
+            width="0.2777777777777778"
+            height="0.36111111111111116"
+            rx="0.08666666666666667"
+            ry="0.08666666666666667"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-status-typing-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.5166666666666667"
+            y="0.6666666666666666"
+            width="0.6333333333333333"
+            height="0.3333333333333333"
+            rx="0.16666666666666666"
+            ry="0.16666666666666666"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-avatar-decoration-status-typing-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <rect
+            fill="black"
+            x="0.513888888888889"
+            y="0.6388888888888888"
+            width="0.5277777777777778"
+            height="0.2777777777777778"
+            rx="0.08429783950617281"
+            ry="0.08429783950617281"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.5208333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.5208333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.5208333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <circle fill="black" cx="0.8125" cy="0.8125" r="0.3125"></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-16"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.5208333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.21875"
+            y="0.5"
+            width="1.1875"
+            height="0.625"
+            rx="0.3125"
+            ry="0.3125"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4833333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4833333333333334"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4833333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <circle fill="black" cx="0.85" cy="0.85" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-20"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4833333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.375"
+            y="0.6"
+            width="0.95"
+            height="0.5"
+            rx="0.25"
+            ry="0.25"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4583333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4583333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4583333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.2916666666666667"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-24"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4583333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.2916666666666667"
+            y="0.5416666666666666"
+            width="1.0833333333333333"
+            height="0.5833333333333334"
+            rx="0.2916666666666667"
+            ry="0.2916666666666667"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4270833333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4270833333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4270833333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <circle fill="black" cx="0.84375" cy="0.84375" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.4270833333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.359375"
+            y="0.59375"
+            width="0.96875"
+            height="0.5"
+            rx="0.25"
+            ry="0.25"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4083333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4083333333333334"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4083333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <circle fill="black" cx="0.85" cy="0.85" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-40"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.4083333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.375"
+            y="0.6"
+            width="0.95"
+            height="0.5"
+            rx="0.25"
+            ry="0.25"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3958333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3958333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3958333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.875"
+            cy="0.875"
+            r="0.20833333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-48"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3958333333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.4791666666666667"
+            y="0.6666666666666666"
+            width="0.7916666666666666"
+            height="0.4166666666666667"
+            rx="0.20833333333333334"
+            ry="0.20833333333333334"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.3869047619047619"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.3869047619047619"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.3869047619047619"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.8392857142857143"
+            cy="0.8392857142857143"
+            r="0.19642857142857142"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-56"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.3869047619047619"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.45535714285714285"
+            y="0.6428571428571429"
+            width="0.7678571428571429"
+            height="0.39285714285714285"
+            rx="0.19642857142857142"
+            ry="0.19642857142857142"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.375"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.375"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.375"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.19444444444444445"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.375"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.4722222222222222"
+            y="0.6388888888888888"
+            width="0.7222222222222222"
+            height="0.3888888888888889"
+            rx="0.19444444444444445"
+            ry="0.19444444444444445"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.37083333333333335"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.37083333333333335"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.37083333333333335"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <circle fill="black" cx="0.85" cy="0.85" r="0.175"></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.33333333333333337"
+            cy="0.33333333333333337"
+            r="0.33333333333333337"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.37083333333333335"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666667"
+            cy="0.6666666666666667"
+            r="0.33333333333333337"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.525"
+            y="0.675"
+            width="0.65"
+            height="0.35"
+            rx="0.175"
+            ry="0.175"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3645833333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3645833333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3645833333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.1875"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-96"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3645833333333333"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.4895833333333333"
+            y="0.6458333333333334"
+            width="0.6875"
+            height="0.375"
+            rx="0.1875"
+            ry="0.1875"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.35833333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-back-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.35833333333333334"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-status-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.35833333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.16666666666666666"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-diagonal-facepile-typing-120"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle
+            fill="white"
+            cx="0.3333333333333333"
+            cy="0.3333333333333333"
+            r="0.3333333333333333"
+          ></circle>
+          <circle
+            fill="black"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.35833333333333334"
+          ></circle>
+          <circle
+            fill="white"
+            cx="0.6666666666666666"
+            cy="0.6666666666666666"
+            r="0.3333333333333333"
+          ></circle>
+          <rect
+            fill="black"
+            x="0.5166666666666667"
+            y="0.6666666666666666"
+            width="0.6333333333333333"
+            height="0.3333333333333333"
+            rx="0.16666666666666666"
+            ry="0.16666666666666666"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-status-online-mobile"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect
+            fill="white"
+            x="0"
+            y="0"
+            width="1"
+            height="1"
+            rx="0.1875"
+            ry="0.125"
+          ></rect>
+          <rect
+            fill="black"
+            x="0.125"
+            y="0.16666666666666666"
+            width="0.75"
+            height="0.5"
+          ></rect>
+          <ellipse
+            fill="black"
+            cx="0.5"
+            cy="0.8333333333333334"
+            rx="0.125"
+            ry="0.08333333333333333"
+          ></ellipse>
+        </mask>
+        <mask
+          id="svg-mask-status-online-vr"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <svg viewBox="0 4 24 16" width="1" height="1">
+            <path
+              fill="white"
+              d="M8.46 8.64a1 1 0 0 1 1 1c0 .44-.3.8-.72.92l-.11.07c-.08.06-.2.19-.2.41a.99.99 0 0 1-.98.86h-.06a1 1 0 0 1-.94-1.05l.02-.32c.05-1.06.92-1.9 1.99-1.9Z"
+            ></path>
+            <path
+              fill="white"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.55 5a5.5 5.5 0 0 1 5.15 3.67h.3a2 2 0 0 1 2 2v3.18a2 2 0 0 1-2 1.99h-.2A4.54 4.54 0 0 1 16.55 19a4.45 4.45 0 0 1-3.6-1.83 1.2 1.2 0 0 0-1.9 0 4.44 4.44 0 0 1-3.9 1.82 4.54 4.54 0 0 1-3.94-3.15H3a2 2 0 0 1-2-2v-3.18c0-1.1.9-1.99 2-1.99h.3A5.5 5.5 0 0 1 8.46 5h7.09Zm-7.1 2C6.6 7 5.06 8.5 4.97 10.41l-.02.66v3.18c0 1.43 1.05 2.66 2.34 2.74.85.06 1.63-.32 2.14-1.01a3.2 3.2 0 0 1 2.57-1.3c1 0 1.97.48 2.57 1.3.5.69 1.3 1.08 2.14 1.01 1.3-.08 2.34-1.31 2.34-2.74l-.02-3.84a3.54 3.54 0 0 0-3.49-3.43H8.45Z"
+            ></path>
+          </svg>
+        </mask>
+        <mask
+          id="svg-mask-status-online"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+        </mask>
+        <mask
+          id="svg-mask-status-idle"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.25" cy="0.25" r="0.375"></circle>
+        </mask>
+        <mask
+          id="svg-mask-status-dnd"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <rect
+            fill="black"
+            x="0.125"
+            y="0.375"
+            width="0.75"
+            height="0.25"
+            rx="0.125"
+            ry="0.125"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-status-offline"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.5" cy="0.5" r="0.25"></circle>
+        </mask>
+        <mask
+          id="svg-mask-status-streaming"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <polygon
+            fill="black"
+            points="0.35,0.25 0.78301275,0.5 0.35,0.75"
+          ></polygon>
+        </mask>
+        <mask
+          id="svg-mask-status-typing"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect
+            fill="white"
+            cx="0"
+            cy="0"
+            width="1"
+            height="1"
+            ry="0.5"
+            rx="0.2"
+          ></rect>
+        </mask>
+        <mask
+          id="svg-mask-status-screenshare"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect width="1" height="1" fill="white"></rect>
+          <path
+            d="M0.5 0.71875C0.5 0.649716 0.555966 0.59375 0.625 0.59375H1.0V1.0H0.5V0.71875Z"
+            fill="black"
+          ></path>
+        </mask>
+        <mask
+          id="svg-mask-avatar-voice-call-80"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+          <circle fill="black" cx="0.85" cy="0.85" r="0.2"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-call-icon"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5" opacity="1"></circle>
+          <circle fill="black" cx="0.85" cy="0.15" r="0.2"></circle>
+        </mask>
+        <mask
+          id="svg-mask-avatar-call-icon-32"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <circle fill="white" cx="0.5" cy="0.5" r="0.5" opacity="0.5"></circle>
+          <circle fill="black" cx="0.8" cy="0.25" r="0.325"></circle>
+        </mask>
+        <mask
+          id="svg-mask-sticker-rounded-rect"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <path
+            d="M0 0.26087C0 0.137894 0 0.0764069 0.0382035 0.0382035C0.0764069 0 0.137894 0 0.26087 0H0.73913C0.862106 0 0.923593 0 0.961797 0.0382035C1 0.0764069 1 0.137894 1 0.26087V0.73913C1 0.862106 1 0.923593 0.961797 0.961797C0.923593 1 0.862106 1 0.73913 1H0.26087C0.137894 1 0.0764069 1 0.0382035 0.961797C0 0.923593 0 0.862106 0 0.73913V0.26087Z"
+            fill="white"
+          ></path>
+        </mask>
+        <mask
+          id="svg-mask-chat-input-button-notification"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect width="1" height="1" fill="white"></rect>
+          <circle cx="0.85" cy="0.85" r="0.25" fill="black"></circle>
+        </mask>
+        <mask
+          id="svg-mask-sticker-shop-notification"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect width="1" height="1" fill="white"></rect>
+          <circle cx="0.9" cy="0.9" r="0.5" fill="black"></circle>
+        </mask>
+        <mask
+          id="svg-mask-autocomplete-emoji-upsell-emoji"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" width="1" height="1"></rect>
+          <circle
+            fill="black"
+            cx="1.33"
+            cy="0.5"
+            r="0.5833333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-event-ticket"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <path
+            d="M0 0.12C0 0.0779961 0 0.0569941 0.00408726 0.0409507C0.00768251 0.0268386 0.0134193 0.015365 0.0204754 0.00817451C0.028497 0 0.038998 0 0.06 0H0.94C0.961002 0 0.971503 0 0.979525 0.00817451C0.986581 0.015365 0.992318 0.0268386 0.995913 0.0409507C1 0.0569941 1 0.0779961 1 0.12V0.45C0.986193 0.45 0.975 0.472386 0.975 0.5C0.975 0.527614 0.986193 0.55 1 0.55V0.88C1 0.922004 1 0.943006 0.995913 0.959049C0.992318 0.973161 0.986581 0.984635 0.979525 0.991826C0.971503 1 0.961002 1 0.94 1H0.0600001C0.0389981 1 0.028497 1 0.0204754 0.991826C0.0134193 0.984635 0.00768251 0.973161 0.00408726 0.959049C0 0.943006 0 0.922004 0 0.88V0.55C0.0138071 0.55 0.025 0.527614 0.025 0.5C0.025 0.472386 0.0138071 0.45 0 0.45V0.12Z"
+            fill="white"
+          ></path>
+        </mask>
+        <mask
+          id="svg-mask-guild-icon-with-channel-type"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <path
+            fill="white"
+            d="M0 0.464C0 0.301585 0 0.220377 0.0316081 0.158343C0.0594114 0.103776 0.103776 0.0594114 0.158343 0.0316081C0.220377 0 0.301585 0 0.464 0H0.536C0.698415 0 0.779623 0 0.841657 0.0316081C0.896224 0.0594114 0.940589 0.103776 0.968392 0.158343C1 0.220377 1 0.301585 1 0.464V0.536C1 0.698415 1 0.779623 0.968392 0.841657C0.940589 0.896224 0.896224 0.940589 0.841657 0.968392C0.779623 1 0.698415 1 0.536 1H0.464C0.301585 1 0.220377 1 0.158343 0.968392C0.103776 0.940589 0.0594114 0.896224 0.0316081 0.841657C0 0.779623 0 0.698415 0 0.536V0.464Z"
+          ></path>
+          <circle cx="0.9" cy="0.9" r="0.5" fill="black"></circle>
+        </mask>
+        <mask
+          id="svg-mask-channel-icon-with-guild-icon"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <path
+            fill="white"
+            d="M0 0.464C0 0.301585 0 0.220377 0.0316081 0.158343C0.0594114 0.103776 0.103776 0.0594114 0.158343 0.0316081C0.220377 0 0.301585 0 0.464 0H0.536C0.698415 0 0.779623 0 0.841657 0.0316081C0.896224 0.0594114 0.940589 0.103776 0.968392 0.158343C1 0.220377 1 0.301585 1 0.464V0.536C1 0.698415 1 0.779623 0.968392 0.841657C0.940589 0.896224 0.896224 0.940589 0.841657 0.968392C0.779623 1 0.698415 1 0.536 1H0.464C0.301585 1 0.220377 1 0.158343 0.968392C0.103776 0.940589 0.0594114 0.896224 0.0316081 0.841657C0 0.779623 0 0.698415 0 0.536V0.464Z"
+          ></path>
+          <path
+            fill="black"
+            d="M0 0.464C0 0.301585 0 0.220377 0.0316081 0.158343C0.0594114 0.103776 0.103776 0.0594114 0.158343 0.0316081C0.220377 0 0.301585 0 0.464 0H0.536C0.698415 0 0.779623 0 0.841657 0.0316081C0.896224 0.0594114 0.940589 0.103776 0.968392 0.158343C1 0.220377 1 0.301585 1 0.464V0.536C1 0.698415 1 0.779623 0.968392 0.841657C0.940589 0.896224 0.896224 0.940589 0.841657 0.968392C0.779623 1 0.698415 1 0.536 1H0.464C0.301585 1 0.220377 1 0.158343 0.968392C0.103776 0.940589 0.0594114 0.896224 0.0316081 0.841657C0 0.779623 0 0.698415 0 0.536V0.464Z"
+            transform="translate(0.45 0.45)"
+          ></path>
+        </mask>
+        <mask
+          id="svg-mask-content-inventory-card-face-pile-avatar"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" width="1" height="1"></rect>
+          <circle fill="black" cx="1.33" cy="0.5" r="0.65"></circle>
+        </mask>
+        <mask
+          id="svg-mask-guild-popout-activity-icon"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle fill="black" cx="1.33" cy="0.5" r="0.6"></circle>
+        </mask>
+        <mask
+          id="svg-mask-clan-icon"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" rx="0.3" ry="0.3" width="1" height="1"></rect>
+        </mask>
+        <mask
+          id="svg-mask-badged-guild-icon"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect x="0" y="0" width="1" height="1" fill="white"></rect>
+          <circle cx="0.85" cy="0.15" r="0.25" fill="black"></circle>
+        </mask>
+        <mask
+          id="svg-mask-forward-attachment-pile-overflow"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <path
+            d="M0.142857 0C0.0639593 0 0 0.0639593 0 0.142857V0.857143C0 0.936041 0.0639593 1 0.142857 1H0.554564C0.520632 0.962089 0.5 0.912025 0.5 0.857143V0.714286C0.5 0.595939 0.595939 0.5 0.714286 0.5H0.857143C0.912025 0.5 0.962089 0.520632 1 0.554564V0.142857C1 0.0639593 0.936041 0 0.857143 0H0.142857Z"
+            fill="white"
+          ></path>
+        </mask>
+        <mask
+          id="svg-mask-content-image-60"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.8666666666666667"
+            cy="0.8666666666666667"
+            r="0.23333333333333334"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-content-image-72"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle
+            fill="black"
+            cx="0.8333333333333334"
+            cy="0.8333333333333334"
+            r="0.2777777777777778"
+          ></circle>
+        </mask>
+        <mask
+          id="svg-mask-content-image-100"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+          <circle fill="black" cx="0.88" cy="0.88" r="0.2"></circle>
+        </mask>
+        <mask
+          id="svg-mask-user-avatar-with-game-icon"
+          maskContentUnits="objectBoundingBox"
+          viewBox="0 0 1 1"
+        >
+          <rect fill="white" rx="0.3" ry="0.3" width="1" height="1"></rect>
+        </mask></svg
+      ><svg
+        viewBox="0 0 1 1"
+        aria-hidden="true"
+        style="
+          position: absolute;
+          pointer-events: none;
+          top: -1px;
+          left: -1px;
+          width: 1px;
+          height: 1px;
+        "
+      >
+        <linearGradient id="ee205ee7-aaa7-476f-b8a7-03490a650700">
+          <stop
+            offset=".1762"
+            stop-color="var(--premium-tier-0-blue-for-gradients)"
+          ></stop>
+          <stop
+            offset="0.5351"
+            stop-color="var(--premium-tier-0-blue-for-gradients-2)"
+          ></stop>
+          <stop
+            offset="1"
+            stop-color="var(--premium-tier-0-purple-for-gradients)"
+          ></stop>
+        </linearGradient>
+        <linearGradient id="1767ceb6-2ba8-4cc0-ab8e-31aeddcb05bd">
+          <stop stop-color="var(--premium-tier-1-blue)"></stop>
+          <stop offset="1" stop-color="var(--premium-tier-1-purple)"></stop>
+        </linearGradient>
+        <linearGradient id="1b087ce1-89be-4757-b361-54510b5d569c">
+          <stop stop-color="var(--premium-tier-2-purple-for-gradients)"></stop>
+          <stop
+            offset="0.502368"
+            stop-color="var(--premium-tier-2-purple-for-gradients-2)"
+          ></stop>
+          <stop
+            offset="1"
+            stop-color="var(--premium-tier-2-pink-for-gradients)"
+          ></stop>
+        </linearGradient>
+        <linearGradient id="c953c3c6-cdc8-4e4d-af22-282221bc5e70">
+          <stop stop-color="var(--guild-boosting-blue)"></stop>
+          <stop offset="1" stop-color="var(--guild-boosting-purple)"></stop>
+        </linearGradient>
+        <linearGradient
+          id="8cf18976-9533-4f7f-995e-dbaa40edd44e"
+          gradientTransform="rotate(45)"
+        >
+          <stop offset="0" stop-color="var(--premium-tier-2-purple)"></stop>
+          <stop offset="1" stop-color="var(--premium-tier-2-pink)"></stop>
+        </linearGradient>
+      </svg>
+      <div style="position: fixed; opacity: 0; pointer-events: none"></div>
+      <div class="appAsidePanelWrapper_a3002d">
+        <div class="notAppAsidePanel_a3002d" data-app-not-dev-tools="true">
+          <div class="app_a3002d">
+            <div class="characterBackground_eb4069">
+              <img
+                class="artwork_eb4069"
+                alt=""
+                src="assets/assets/d8680b1c1576ecc8.svg"
+              /><img
+                class="logoWithText_eb4069"
+                alt=""
+                src="assets/assets/131c318dd45b7aa4.svg"
+              />
+              <div class="wrapper_b97385">
+                <div
+                  class="animatedDiv_b97385"
+                  style="
+                    opacity: 1;
+                    transform: scale(1) translateY(0px) translateZ(0px);
+                  "
+                >
+                  <div>
+                    <form
+                      action="http://localhost:3000/login"
+                      method="post"
+                      class="authBoxExpanded__921c5 authBox__921c5 theme-dark images-dark disable-adaptive-theme"
+                    >
+                      <div class="discordLogo__921c5"></div>
+                      <div class="centeringWrapper__921c5">
+                        <div
+                          class="flex__7c0ba horizontal__7c0ba justifyStart_abf706 alignCenter_abf706 noWrap_abf706"
+                          style="flex: 1 1 auto"
+                        >
+                          <div class="mainLoginContainer__1d5fc">
+                            <div class="header__1d5fc">
+                              <h1
+                                class="heading-xl/semibold_cf4812 defaultColor__5345c title__921c5 marginBottom8_fd297e"
+                                data-text-variant="heading-xl/semibold"
+                                style="color: var(--text-strong)"
+                              >
+                                Welcome back!
+                              </h1>
+                              <div
+                                class="text-md/normal_cf4812"
+                                data-text-variant="text-md/normal"
+                                style="color: var(--text-default)"
+                              >
+                                We're so excited to see you again!
+                              </div>
+                            </div>
+                            <div class="block__921c5 marginTop20_fd297e">
+                              <div class="marginBottom20_fd297e">
+                                <div
+                                  class="container__5a838"
+                                  data-layout="vertical"
+                                >
+                                  <div class="labelContainer__5a838">
+                                    <label
+                                      class="text-md/medium_cf4812 label__5a838"
+                                      aria-hidden="false"
+                                      data-interactive="false"
+                                      id="«r0»"
+                                      for="uid_8"
+                                      data-text-variant="text-md/medium"
+                                      style="color: var(--text-strong)"
+                                      >Email or Phone Number
+                                      <div
+                                        class="text-md/normal_cf4812 required__5a838"
+                                        aria-hidden="true"
+                                        data-text-variant="text-md/normal"
+                                        style="
+                                          color: var(--text-feedback-critical);
+                                        "
+                                      >
+                                        *
+                                      </div></label
+                                    >
+                                  </div>
+                                  <div class="control__5a838">
+                                    <div
+                                      class="input__0ed4f input_d64f22 focused__0ed4f"
+                                    >
+                                      <div
+                                        class="outerContainer__310be hidden__310be"
+                                      >
+                                        <div
+                                          class="container__310be"
+                                          style="width: 0px"
+                                        >
+                                          <div class="innerContainer__310be">
+                                            <div
+                                              class="countryCode__310be"
+                                              aria-expanded="false"
+                                              role="button"
+                                              tabindex="0"
+                                            >
+                                              PL +48
+                                            </div>
+                                            <div class="separator__310be"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="inputWrapper__0ed4f inputWrapper_d64f22"
+                                      >
+                                        <input
+                                          class="input__0ed4f inputField_d64f22"
+                                          placeholder=""
+                                          maxlength="999"
+                                          id="uid_8"
+                                          aria-label="Email or Phone Number"
+                                          required=""
+                                          autocomplete="username webauthn"
+                                          autocapitalize="none"
+                                          autocorrect="off"
+                                          spellcheck="false"
+                                          type="text"
+                                          value=""
+                                          name="username"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="container__5a838"
+                                data-layout="vertical"
+                              >
+                                <div class="labelContainer__5a838">
+                                  <label
+                                    class="text-md/medium_cf4812 label__5a838"
+                                    aria-hidden="false"
+                                    data-interactive="false"
+                                    id="«r6»"
+                                    for="uid_10"
+                                    data-text-variant="text-md/medium"
+                                    style="color: var(--text-strong)"
+                                    >Password
+                                    <div
+                                      class="text-md/normal_cf4812 required__5a838"
+                                      aria-hidden="true"
+                                      data-text-variant="text-md/normal"
+                                      style="
+                                        color: var(--text-feedback-critical);
+                                      "
+                                    >
+                                      *
+                                    </div></label
+                                  >
+                                </div>
+                                <div class="control__5a838">
+                                  <div
+                                    class="container__72c38"
+                                    data-full-width="false"
+                                  >
+                                    <div
+                                      class="wrapper__72c38 container__0f084 md__0f084 text-md/normal__0f084"
+                                      data-error="false"
+                                      data-disabled="false"
+                                    >
+                                      <input
+                                        class="input__0f084"
+                                        aria-required="true"
+                                        placeholder=""
+                                        data-mana-component="text-input"
+                                        aria-label="Password"
+                                        autocomplete="current-password"
+                                        spellcheck="false"
+                                        id="uid_10"
+                                        label="Password"
+                                        required=""
+                                        aria-invalid="false"
+                                        type="password"
+                                        value=""
+                                        name="password"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="marginBottom20_fd297e marginTop4_fd297e"
+                              >
+                                <button
+                                  class="textButton__7a01b primary__7a01b"
+                                  data-mana-component="text-button"
+                                  role="button"
+                                  type="button"
+                                >
+                                  <span
+                                    class="lineClamp1__4bd52 text-sm/normal_cf4812 text__7a01b"
+                                    data-text-variant="text-sm/normal"
+                                    >Forgot your password?</span
+                                  >
+                                </button>
+                              </div>
+                              <div class="marginBottom8_fd297e">
+                                <button
+                                  data-mana-component="button"
+                                  role="button"
+                                  aria-busy="false"
+                                  class="button_a22cb0 md_a22cb0 primary_a22cb0 hasText_a22cb0 fullWidth_a22cb0"
+                                  type="submit"
+                                >
+                                  <div class="buttonChildrenWrapper_a22cb0">
+                                    <div class="buttonChildren_a22cb0">
+                                      <span
+                                        class="lineClamp1__4bd52 text-md/medium_cf4812"
+                                        data-text-variant="text-md/medium"
+                                        >Log In</span
+                                      >
+                                    </div>
+                                  </div>
+                                </button>
+                              </div>
+                              <div class="marginTop4_fd297e">
+                                <span class="needAccount__1d5fc"
+                                  >Need an account?</span
+                                ><span class="smallRegisterLink__1d5fc"
+                                  ><button
+                                    class="textButton__7a01b primary__7a01b"
+                                    data-mana-component="text-button"
+                                    role="button"
+                                    type="button"
+                                  >
+                                    <span
+                                      class="lineClamp1__4bd52 text-sm/normal_cf4812 text__7a01b"
+                                      data-text-variant="text-sm/normal"
+                                      >Register</span
+                                    >
+                                  </button></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="verticalSeparator_e16417"></div>
+                          <div class="transitionGroup__6ba63 qrLogin_e16417">
+                            <div
+                              class="measurementFill__6ba63 measurement__6ba63 measurementFillStatic__6ba63"
+                            >
+                              <div
+                                class="animatedNode__6ba63"
+                                style="
+                                  overflow: visible;
+                                  opacity: 1;
+                                  height: 100%;
+                                  transform: translateX(0%);
+                                "
+                              >
+                                <div class="qrLoginInner_e16417">
+                                  <div class="qrCodeContainer_e16417">
+                                    <div
+                                      class="qrCodeContainer_c28498 qrCode_e16417"
+                                      style="
+                                        width: 160px;
+                                        height: 160px;
+                                        background-color: rgb(255, 255, 255);
+                                      "
+                                    >
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="160"
+                                        viewBox="0 0 37 37"
+                                        width="160"
+                                      >
+                                        <path
+                                          d="       M 7 0 l 1 0 0 1 -1 0 Z M 8 0 l 1 0 0 1 -1 0 Z M 9 0 l 1 0 0 1 -1 0 Z M 10 0 l 1 0 0 1 -1 0 Z M 11 0 l 1 0 0 1 -1 0 Z M 12 0 l 1 0 0 1 -1 0 Z M 13 0 l 1 0 0 1 -1 0 Z    M 17 0 l 1 0 0 1 -1 0 Z M 18 0 l 1 0 0 1 -1 0 Z   M 21 0 l 1 0 0 1 -1 0 Z   M 24 0 l 1 0 0 1 -1 0 Z M 25 0 l 1 0 0 1 -1 0 Z  M 27 0 l 1 0 0 1 -1 0 Z M 28 0 l 1 0 0 1 -1 0 Z M 29 0 l 1 0 0 1 -1 0 Z         M 1 1 l 1 0 0 1 -1 0 Z M 2 1 l 1 0 0 1 -1 0 Z M 3 1 l 1 0 0 1 -1 0 Z M 4 1 l 1 0 0 1 -1 0 Z M 5 1 l 1 0 0 1 -1 0 Z  M 7 1 l 1 0 0 1 -1 0 Z  M 9 1 l 1 0 0 1 -1 0 Z M 10 1 l 1 0 0 1 -1 0 Z M 11 1 l 1 0 0 1 -1 0 Z M 12 1 l 1 0 0 1 -1 0 Z M 13 1 l 1 0 0 1 -1 0 Z M 14 1 l 1 0 0 1 -1 0 Z  M 16 1 l 1 0 0 1 -1 0 Z M 17 1 l 1 0 0 1 -1 0 Z M 18 1 l 1 0 0 1 -1 0 Z M 19 1 l 1 0 0 1 -1 0 Z  M 21 1 l 1 0 0 1 -1 0 Z M 22 1 l 1 0 0 1 -1 0 Z     M 27 1 l 1 0 0 1 -1 0 Z  M 29 1 l 1 0 0 1 -1 0 Z  M 31 1 l 1 0 0 1 -1 0 Z M 32 1 l 1 0 0 1 -1 0 Z M 33 1 l 1 0 0 1 -1 0 Z M 34 1 l 1 0 0 1 -1 0 Z M 35 1 l 1 0 0 1 -1 0 Z   M 1 2 l 1 0 0 1 -1 0 Z    M 5 2 l 1 0 0 1 -1 0 Z  M 7 2 l 1 0 0 1 -1 0 Z    M 11 2 l 1 0 0 1 -1 0 Z  M 13 2 l 1 0 0 1 -1 0 Z   M 16 2 l 1 0 0 1 -1 0 Z M 17 2 l 1 0 0 1 -1 0 Z  M 19 2 l 1 0 0 1 -1 0 Z M 20 2 l 1 0 0 1 -1 0 Z  M 22 2 l 1 0 0 1 -1 0 Z  M 24 2 l 1 0 0 1 -1 0 Z M 25 2 l 1 0 0 1 -1 0 Z M 26 2 l 1 0 0 1 -1 0 Z M 27 2 l 1 0 0 1 -1 0 Z  M 29 2 l 1 0 0 1 -1 0 Z  M 31 2 l 1 0 0 1 -1 0 Z    M 35 2 l 1 0 0 1 -1 0 Z   M 1 3 l 1 0 0 1 -1 0 Z    M 5 3 l 1 0 0 1 -1 0 Z  M 7 3 l 1 0 0 1 -1 0 Z  M 9 3 l 1 0 0 1 -1 0 Z  M 11 3 l 1 0 0 1 -1 0 Z M 12 3 l 1 0 0 1 -1 0 Z   M 15 3 l 1 0 0 1 -1 0 Z M 16 3 l 1 0 0 1 -1 0 Z  M 18 3 l 1 0 0 1 -1 0 Z M 19 3 l 1 0 0 1 -1 0 Z  M 21 3 l 1 0 0 1 -1 0 Z M 22 3 l 1 0 0 1 -1 0 Z    M 26 3 l 1 0 0 1 -1 0 Z M 27 3 l 1 0 0 1 -1 0 Z  M 29 3 l 1 0 0 1 -1 0 Z  M 31 3 l 1 0 0 1 -1 0 Z    M 35 3 l 1 0 0 1 -1 0 Z   M 1 4 l 1 0 0 1 -1 0 Z    M 5 4 l 1 0 0 1 -1 0 Z  M 7 4 l 1 0 0 1 -1 0 Z M 8 4 l 1 0 0 1 -1 0 Z    M 12 4 l 1 0 0 1 -1 0 Z  M 14 4 l 1 0 0 1 -1 0 Z M 15 4 l 1 0 0 1 -1 0 Z   M 18 4 l 1 0 0 1 -1 0 Z      M 24 4 l 1 0 0 1 -1 0 Z M 25 4 l 1 0 0 1 -1 0 Z M 26 4 l 1 0 0 1 -1 0 Z M 27 4 l 1 0 0 1 -1 0 Z M 28 4 l 1 0 0 1 -1 0 Z M 29 4 l 1 0 0 1 -1 0 Z  M 31 4 l 1 0 0 1 -1 0 Z    M 35 4 l 1 0 0 1 -1 0 Z   M 1 5 l 1 0 0 1 -1 0 Z M 2 5 l 1 0 0 1 -1 0 Z M 3 5 l 1 0 0 1 -1 0 Z M 4 5 l 1 0 0 1 -1 0 Z M 5 5 l 1 0 0 1 -1 0 Z  M 7 5 l 1 0 0 1 -1 0 Z M 8 5 l 1 0 0 1 -1 0 Z  M 10 5 l 1 0 0 1 -1 0 Z M 11 5 l 1 0 0 1 -1 0 Z   M 14 5 l 1 0 0 1 -1 0 Z M 15 5 l 1 0 0 1 -1 0 Z   M 18 5 l 1 0 0 1 -1 0 Z M 19 5 l 1 0 0 1 -1 0 Z M 20 5 l 1 0 0 1 -1 0 Z M 21 5 l 1 0 0 1 -1 0 Z M 22 5 l 1 0 0 1 -1 0 Z M 23 5 l 1 0 0 1 -1 0 Z M 24 5 l 1 0 0 1 -1 0 Z   M 27 5 l 1 0 0 1 -1 0 Z M 28 5 l 1 0 0 1 -1 0 Z M 29 5 l 1 0 0 1 -1 0 Z  M 31 5 l 1 0 0 1 -1 0 Z M 32 5 l 1 0 0 1 -1 0 Z M 33 5 l 1 0 0 1 -1 0 Z M 34 5 l 1 0 0 1 -1 0 Z M 35 5 l 1 0 0 1 -1 0 Z         M 7 6 l 1 0 0 1 -1 0 Z  M 9 6 l 1 0 0 1 -1 0 Z  M 11 6 l 1 0 0 1 -1 0 Z  M 13 6 l 1 0 0 1 -1 0 Z  M 15 6 l 1 0 0 1 -1 0 Z  M 17 6 l 1 0 0 1 -1 0 Z  M 19 6 l 1 0 0 1 -1 0 Z  M 21 6 l 1 0 0 1 -1 0 Z  M 23 6 l 1 0 0 1 -1 0 Z  M 25 6 l 1 0 0 1 -1 0 Z  M 27 6 l 1 0 0 1 -1 0 Z  M 29 6 l 1 0 0 1 -1 0 Z        M 0 7 l 1 0 0 1 -1 0 Z M 1 7 l 1 0 0 1 -1 0 Z M 2 7 l 1 0 0 1 -1 0 Z M 3 7 l 1 0 0 1 -1 0 Z M 4 7 l 1 0 0 1 -1 0 Z M 5 7 l 1 0 0 1 -1 0 Z M 6 7 l 1 0 0 1 -1 0 Z M 7 7 l 1 0 0 1 -1 0 Z  M 9 7 l 1 0 0 1 -1 0 Z M 10 7 l 1 0 0 1 -1 0 Z M 11 7 l 1 0 0 1 -1 0 Z  M 13 7 l 1 0 0 1 -1 0 Z M 14 7 l 1 0 0 1 -1 0 Z  M 16 7 l 1 0 0 1 -1 0 Z   M 19 7 l 1 0 0 1 -1 0 Z M 20 7 l 1 0 0 1 -1 0 Z M 21 7 l 1 0 0 1 -1 0 Z   M 24 7 l 1 0 0 1 -1 0 Z M 25 7 l 1 0 0 1 -1 0 Z M 26 7 l 1 0 0 1 -1 0 Z M 27 7 l 1 0 0 1 -1 0 Z  M 29 7 l 1 0 0 1 -1 0 Z M 30 7 l 1 0 0 1 -1 0 Z M 31 7 l 1 0 0 1 -1 0 Z M 32 7 l 1 0 0 1 -1 0 Z M 33 7 l 1 0 0 1 -1 0 Z M 34 7 l 1 0 0 1 -1 0 Z M 35 7 l 1 0 0 1 -1 0 Z M 36 7 l 1 0 0 1 -1 0 Z  M 1 8 l 1 0 0 1 -1 0 Z M 2 8 l 1 0 0 1 -1 0 Z M 3 8 l 1 0 0 1 -1 0 Z M 4 8 l 1 0 0 1 -1 0 Z M 5 8 l 1 0 0 1 -1 0 Z  M 7 8 l 1 0 0 1 -1 0 Z    M 11 8 l 1 0 0 1 -1 0 Z   M 14 8 l 1 0 0 1 -1 0 Z   M 17 8 l 1 0 0 1 -1 0 Z M 18 8 l 1 0 0 1 -1 0 Z  M 20 8 l 1 0 0 1 -1 0 Z  M 22 8 l 1 0 0 1 -1 0 Z M 23 8 l 1 0 0 1 -1 0 Z  M 25 8 l 1 0 0 1 -1 0 Z   M 28 8 l 1 0 0 1 -1 0 Z   M 31 8 l 1 0 0 1 -1 0 Z M 32 8 l 1 0 0 1 -1 0 Z    M 36 8 l 1 0 0 1 -1 0 Z M 0 9 l 1 0 0 1 -1 0 Z M 1 9 l 1 0 0 1 -1 0 Z  M 3 9 l 1 0 0 1 -1 0 Z   M 6 9 l 1 0 0 1 -1 0 Z  M 8 9 l 1 0 0 1 -1 0 Z M 9 9 l 1 0 0 1 -1 0 Z    M 13 9 l 1 0 0 1 -1 0 Z  M 15 9 l 1 0 0 1 -1 0 Z  M 17 9 l 1 0 0 1 -1 0 Z  M 19 9 l 1 0 0 1 -1 0 Z M 20 9 l 1 0 0 1 -1 0 Z M 21 9 l 1 0 0 1 -1 0 Z M 22 9 l 1 0 0 1 -1 0 Z M 23 9 l 1 0 0 1 -1 0 Z  M 25 9 l 1 0 0 1 -1 0 Z   M 28 9 l 1 0 0 1 -1 0 Z M 29 9 l 1 0 0 1 -1 0 Z     M 34 9 l 1 0 0 1 -1 0 Z  M 36 9 l 1 0 0 1 -1 0 Z      M 5 10 l 1 0 0 1 -1 0 Z  M 7 10 l 1 0 0 1 -1 0 Z  M 9 10 l 1 0 0 1 -1 0 Z     M 14 10 l 1 0 0 1 -1 0 Z      M 20 10 l 1 0 0 1 -1 0 Z M 21 10 l 1 0 0 1 -1 0 Z  M 23 10 l 1 0 0 1 -1 0 Z M 24 10 l 1 0 0 1 -1 0 Z  M 26 10 l 1 0 0 1 -1 0 Z  M 28 10 l 1 0 0 1 -1 0 Z   M 31 10 l 1 0 0 1 -1 0 Z   M 34 10 l 1 0 0 1 -1 0 Z      M 3 11 l 1 0 0 1 -1 0 Z M 4 11 l 1 0 0 1 -1 0 Z M 5 11 l 1 0 0 1 -1 0 Z M 6 11 l 1 0 0 1 -1 0 Z M 7 11 l 1 0 0 1 -1 0 Z  M 9 11 l 1 0 0 1 -1 0 Z  M 11 11 l 1 0 0 1 -1 0 Z   M 14 11 l 1 0 0 1 -1 0 Z M 15 11 l 1 0 0 1 -1 0 Z M 16 11 l 1 0 0 1 -1 0 Z M 17 11 l 1 0 0 1 -1 0 Z M 18 11 l 1 0 0 1 -1 0 Z   M 21 11 l 1 0 0 1 -1 0 Z M 22 11 l 1 0 0 1 -1 0 Z  M 24 11 l 1 0 0 1 -1 0 Z M 25 11 l 1 0 0 1 -1 0 Z    M 29 11 l 1 0 0 1 -1 0 Z  M 31 11 l 1 0 0 1 -1 0 Z   M 34 11 l 1 0 0 1 -1 0 Z M 35 11 l 1 0 0 1 -1 0 Z   M 1 12 l 1 0 0 1 -1 0 Z M 2 12 l 1 0 0 1 -1 0 Z M 3 12 l 1 0 0 1 -1 0 Z  M 5 12 l 1 0 0 1 -1 0 Z  M 7 12 l 1 0 0 1 -1 0 Z  M 9 12 l 1 0 0 1 -1 0 Z M 10 12 l 1 0 0 1 -1 0 Z   M 13 12 l 1 0 0 1 -1 0 Z M 14 12 l 1 0 0 1 -1 0 Z    M 18 12 l 1 0 0 1 -1 0 Z M 19 12 l 1 0 0 1 -1 0 Z   M 22 12 l 1 0 0 1 -1 0 Z M 23 12 l 1 0 0 1 -1 0 Z  M 25 12 l 1 0 0 1 -1 0 Z M 26 12 l 1 0 0 1 -1 0 Z   M 29 12 l 1 0 0 1 -1 0 Z   M 32 12 l 1 0 0 1 -1 0 Z M 33 12 l 1 0 0 1 -1 0 Z  M 35 12 l 1 0 0 1 -1 0 Z    M 2 13 l 1 0 0 1 -1 0 Z M 3 13 l 1 0 0 1 -1 0 Z M 4 13 l 1 0 0 1 -1 0 Z M 5 13 l 1 0 0 1 -1 0 Z M 6 13 l 1 0 0 1 -1 0 Z M 7 13 l 1 0 0 1 -1 0 Z    M 11 13 l 1 0 0 1 -1 0 Z M 12 13 l 1 0 0 1 -1 0 Z M 13 13 l 1 0 0 1 -1 0 Z  M 15 13 l 1 0 0 1 -1 0 Z  M 17 13 l 1 0 0 1 -1 0 Z M 18 13 l 1 0 0 1 -1 0 Z      M 24 13 l 1 0 0 1 -1 0 Z  M 26 13 l 1 0 0 1 -1 0 Z   M 29 13 l 1 0 0 1 -1 0 Z M 30 13 l 1 0 0 1 -1 0 Z  M 32 13 l 1 0 0 1 -1 0 Z  M 34 13 l 1 0 0 1 -1 0 Z M 35 13 l 1 0 0 1 -1 0 Z M 36 13 l 1 0 0 1 -1 0 Z     M 4 14 l 1 0 0 1 -1 0 Z M 5 14 l 1 0 0 1 -1 0 Z  M 7 14 l 1 0 0 1 -1 0 Z  M 9 14 l 1 0 0 1 -1 0 Z M 10 14 l 1 0 0 1 -1 0 Z  M 12 14 l 1 0 0 1 -1 0 Z     M 17 14 l 1 0 0 1 -1 0 Z  M 19 14 l 1 0 0 1 -1 0 Z  M 21 14 l 1 0 0 1 -1 0 Z  M 23 14 l 1 0 0 1 -1 0 Z M 24 14 l 1 0 0 1 -1 0 Z M 25 14 l 1 0 0 1 -1 0 Z   M 28 14 l 1 0 0 1 -1 0 Z M 29 14 l 1 0 0 1 -1 0 Z M 30 14 l 1 0 0 1 -1 0 Z    M 34 14 l 1 0 0 1 -1 0 Z   M 0 15 l 1 0 0 1 -1 0 Z  M 2 15 l 1 0 0 1 -1 0 Z   M 5 15 l 1 0 0 1 -1 0 Z M 6 15 l 1 0 0 1 -1 0 Z M 7 15 l 1 0 0 1 -1 0 Z M 8 15 l 1 0 0 1 -1 0 Z     M 13 15 l 1 0 0 1 -1 0 Z    M 17 15 l 1 0 0 1 -1 0 Z M 18 15 l 1 0 0 1 -1 0 Z M 19 15 l 1 0 0 1 -1 0 Z     M 24 15 l 1 0 0 1 -1 0 Z M 25 15 l 1 0 0 1 -1 0 Z M 26 15 l 1 0 0 1 -1 0 Z    M 30 15 l 1 0 0 1 -1 0 Z  M 32 15 l 1 0 0 1 -1 0 Z    M 36 15 l 1 0 0 1 -1 0 Z   M 2 16 l 1 0 0 1 -1 0 Z     M 7 16 l 1 0 0 1 -1 0 Z M 8 16 l 1 0 0 1 -1 0 Z M 9 16 l 1 0 0 1 -1 0 Z M 10 16 l 1 0 0 1 -1 0 Z M 11 16 l 1 0 0 1 -1 0 Z M 12 16 l 1 0 0 1 -1 0 Z M 13 16 l 1 0 0 1 -1 0 Z M 14 16 l 1 0 0 1 -1 0 Z M 15 16 l 1 0 0 1 -1 0 Z M 16 16 l 1 0 0 1 -1 0 Z M 17 16 l 1 0 0 1 -1 0 Z        M 25 16 l 1 0 0 1 -1 0 Z       M 32 16 l 1 0 0 1 -1 0 Z M 33 16 l 1 0 0 1 -1 0 Z  M 35 16 l 1 0 0 1 -1 0 Z  M 0 17 l 1 0 0 1 -1 0 Z M 1 17 l 1 0 0 1 -1 0 Z M 2 17 l 1 0 0 1 -1 0 Z M 3 17 l 1 0 0 1 -1 0 Z M 4 17 l 1 0 0 1 -1 0 Z  M 6 17 l 1 0 0 1 -1 0 Z M 7 17 l 1 0 0 1 -1 0 Z  M 9 17 l 1 0 0 1 -1 0 Z     M 14 17 l 1 0 0 1 -1 0 Z M 15 17 l 1 0 0 1 -1 0 Z   M 18 17 l 1 0 0 1 -1 0 Z M 19 17 l 1 0 0 1 -1 0 Z M 20 17 l 1 0 0 1 -1 0 Z  M 22 17 l 1 0 0 1 -1 0 Z  M 24 17 l 1 0 0 1 -1 0 Z     M 29 17 l 1 0 0 1 -1 0 Z M 30 17 l 1 0 0 1 -1 0 Z  M 32 17 l 1 0 0 1 -1 0 Z M 33 17 l 1 0 0 1 -1 0 Z M 34 17 l 1 0 0 1 -1 0 Z  M 36 17 l 1 0 0 1 -1 0 Z   M 2 18 l 1 0 0 1 -1 0 Z M 3 18 l 1 0 0 1 -1 0 Z M 4 18 l 1 0 0 1 -1 0 Z M 5 18 l 1 0 0 1 -1 0 Z       M 12 18 l 1 0 0 1 -1 0 Z M 13 18 l 1 0 0 1 -1 0 Z M 14 18 l 1 0 0 1 -1 0 Z M 15 18 l 1 0 0 1 -1 0 Z     M 20 18 l 1 0 0 1 -1 0 Z M 21 18 l 1 0 0 1 -1 0 Z M 22 18 l 1 0 0 1 -1 0 Z  M 24 18 l 1 0 0 1 -1 0 Z M 25 18 l 1 0 0 1 -1 0 Z M 26 18 l 1 0 0 1 -1 0 Z  M 28 18 l 1 0 0 1 -1 0 Z  M 30 18 l 1 0 0 1 -1 0 Z M 31 18 l 1 0 0 1 -1 0 Z M 32 18 l 1 0 0 1 -1 0 Z   M 35 18 l 1 0 0 1 -1 0 Z     M 3 19 l 1 0 0 1 -1 0 Z  M 5 19 l 1 0 0 1 -1 0 Z M 6 19 l 1 0 0 1 -1 0 Z  M 8 19 l 1 0 0 1 -1 0 Z M 9 19 l 1 0 0 1 -1 0 Z M 10 19 l 1 0 0 1 -1 0 Z   M 13 19 l 1 0 0 1 -1 0 Z    M 17 19 l 1 0 0 1 -1 0 Z  M 19 19 l 1 0 0 1 -1 0 Z M 20 19 l 1 0 0 1 -1 0 Z M 21 19 l 1 0 0 1 -1 0 Z  M 23 19 l 1 0 0 1 -1 0 Z M 24 19 l 1 0 0 1 -1 0 Z M 25 19 l 1 0 0 1 -1 0 Z       M 32 19 l 1 0 0 1 -1 0 Z M 33 19 l 1 0 0 1 -1 0 Z M 34 19 l 1 0 0 1 -1 0 Z M 35 19 l 1 0 0 1 -1 0 Z    M 2 20 l 1 0 0 1 -1 0 Z M 3 20 l 1 0 0 1 -1 0 Z  M 5 20 l 1 0 0 1 -1 0 Z   M 8 20 l 1 0 0 1 -1 0 Z      M 14 20 l 1 0 0 1 -1 0 Z M 15 20 l 1 0 0 1 -1 0 Z M 16 20 l 1 0 0 1 -1 0 Z  M 18 20 l 1 0 0 1 -1 0 Z M 19 20 l 1 0 0 1 -1 0 Z  M 21 20 l 1 0 0 1 -1 0 Z  M 23 20 l 1 0 0 1 -1 0 Z        M 31 20 l 1 0 0 1 -1 0 Z  M 33 20 l 1 0 0 1 -1 0 Z  M 35 20 l 1 0 0 1 -1 0 Z M 36 20 l 1 0 0 1 -1 0 Z  M 1 21 l 1 0 0 1 -1 0 Z     M 6 21 l 1 0 0 1 -1 0 Z M 7 21 l 1 0 0 1 -1 0 Z M 8 21 l 1 0 0 1 -1 0 Z M 9 21 l 1 0 0 1 -1 0 Z  M 11 21 l 1 0 0 1 -1 0 Z M 12 21 l 1 0 0 1 -1 0 Z M 13 21 l 1 0 0 1 -1 0 Z M 14 21 l 1 0 0 1 -1 0 Z  M 16 21 l 1 0 0 1 -1 0 Z  M 18 21 l 1 0 0 1 -1 0 Z  M 20 21 l 1 0 0 1 -1 0 Z M 21 21 l 1 0 0 1 -1 0 Z    M 25 21 l 1 0 0 1 -1 0 Z   M 28 21 l 1 0 0 1 -1 0 Z  M 30 21 l 1 0 0 1 -1 0 Z M 31 21 l 1 0 0 1 -1 0 Z  M 33 21 l 1 0 0 1 -1 0 Z   M 36 21 l 1 0 0 1 -1 0 Z   M 2 22 l 1 0 0 1 -1 0 Z M 3 22 l 1 0 0 1 -1 0 Z M 4 22 l 1 0 0 1 -1 0 Z M 5 22 l 1 0 0 1 -1 0 Z   M 8 22 l 1 0 0 1 -1 0 Z M 9 22 l 1 0 0 1 -1 0 Z  M 11 22 l 1 0 0 1 -1 0 Z       M 18 22 l 1 0 0 1 -1 0 Z M 19 22 l 1 0 0 1 -1 0 Z   M 22 22 l 1 0 0 1 -1 0 Z M 23 22 l 1 0 0 1 -1 0 Z M 24 22 l 1 0 0 1 -1 0 Z     M 29 22 l 1 0 0 1 -1 0 Z     M 34 22 l 1 0 0 1 -1 0 Z    M 1 23 l 1 0 0 1 -1 0 Z  M 3 23 l 1 0 0 1 -1 0 Z M 4 23 l 1 0 0 1 -1 0 Z  M 6 23 l 1 0 0 1 -1 0 Z M 7 23 l 1 0 0 1 -1 0 Z M 8 23 l 1 0 0 1 -1 0 Z M 9 23 l 1 0 0 1 -1 0 Z  M 11 23 l 1 0 0 1 -1 0 Z         M 20 23 l 1 0 0 1 -1 0 Z M 21 23 l 1 0 0 1 -1 0 Z  M 23 23 l 1 0 0 1 -1 0 Z  M 25 23 l 1 0 0 1 -1 0 Z M 26 23 l 1 0 0 1 -1 0 Z        M 34 23 l 1 0 0 1 -1 0 Z      M 3 24 l 1 0 0 1 -1 0 Z  M 5 24 l 1 0 0 1 -1 0 Z   M 8 24 l 1 0 0 1 -1 0 Z M 9 24 l 1 0 0 1 -1 0 Z M 10 24 l 1 0 0 1 -1 0 Z M 11 24 l 1 0 0 1 -1 0 Z   M 14 24 l 1 0 0 1 -1 0 Z  M 16 24 l 1 0 0 1 -1 0 Z  M 18 24 l 1 0 0 1 -1 0 Z M 19 24 l 1 0 0 1 -1 0 Z      M 25 24 l 1 0 0 1 -1 0 Z M 26 24 l 1 0 0 1 -1 0 Z M 27 24 l 1 0 0 1 -1 0 Z  M 29 24 l 1 0 0 1 -1 0 Z    M 33 24 l 1 0 0 1 -1 0 Z M 34 24 l 1 0 0 1 -1 0 Z M 35 24 l 1 0 0 1 -1 0 Z   M 1 25 l 1 0 0 1 -1 0 Z M 2 25 l 1 0 0 1 -1 0 Z  M 4 25 l 1 0 0 1 -1 0 Z  M 6 25 l 1 0 0 1 -1 0 Z   M 9 25 l 1 0 0 1 -1 0 Z  M 11 25 l 1 0 0 1 -1 0 Z    M 15 25 l 1 0 0 1 -1 0 Z M 16 25 l 1 0 0 1 -1 0 Z   M 19 25 l 1 0 0 1 -1 0 Z    M 23 25 l 1 0 0 1 -1 0 Z M 24 25 l 1 0 0 1 -1 0 Z   M 27 25 l 1 0 0 1 -1 0 Z  M 29 25 l 1 0 0 1 -1 0 Z   M 32 25 l 1 0 0 1 -1 0 Z M 33 25 l 1 0 0 1 -1 0 Z M 34 25 l 1 0 0 1 -1 0 Z M 35 25 l 1 0 0 1 -1 0 Z M 36 25 l 1 0 0 1 -1 0 Z  M 1 26 l 1 0 0 1 -1 0 Z M 2 26 l 1 0 0 1 -1 0 Z M 3 26 l 1 0 0 1 -1 0 Z M 4 26 l 1 0 0 1 -1 0 Z   M 7 26 l 1 0 0 1 -1 0 Z  M 9 26 l 1 0 0 1 -1 0 Z  M 11 26 l 1 0 0 1 -1 0 Z M 12 26 l 1 0 0 1 -1 0 Z M 13 26 l 1 0 0 1 -1 0 Z M 14 26 l 1 0 0 1 -1 0 Z      M 20 26 l 1 0 0 1 -1 0 Z M 21 26 l 1 0 0 1 -1 0 Z M 22 26 l 1 0 0 1 -1 0 Z M 23 26 l 1 0 0 1 -1 0 Z M 24 26 l 1 0 0 1 -1 0 Z M 25 26 l 1 0 0 1 -1 0 Z   M 28 26 l 1 0 0 1 -1 0 Z M 29 26 l 1 0 0 1 -1 0 Z   M 32 26 l 1 0 0 1 -1 0 Z M 33 26 l 1 0 0 1 -1 0 Z     M 1 27 l 1 0 0 1 -1 0 Z   M 4 27 l 1 0 0 1 -1 0 Z M 5 27 l 1 0 0 1 -1 0 Z M 6 27 l 1 0 0 1 -1 0 Z    M 10 27 l 1 0 0 1 -1 0 Z    M 14 27 l 1 0 0 1 -1 0 Z M 15 27 l 1 0 0 1 -1 0 Z  M 17 27 l 1 0 0 1 -1 0 Z   M 20 27 l 1 0 0 1 -1 0 Z M 21 27 l 1 0 0 1 -1 0 Z M 22 27 l 1 0 0 1 -1 0 Z M 23 27 l 1 0 0 1 -1 0 Z  M 25 27 l 1 0 0 1 -1 0 Z M 26 27 l 1 0 0 1 -1 0 Z M 27 27 l 1 0 0 1 -1 0 Z   M 30 27 l 1 0 0 1 -1 0 Z M 31 27 l 1 0 0 1 -1 0 Z    M 35 27 l 1 0 0 1 -1 0 Z M 36 27 l 1 0 0 1 -1 0 Z  M 1 28 l 1 0 0 1 -1 0 Z   M 4 28 l 1 0 0 1 -1 0 Z M 5 28 l 1 0 0 1 -1 0 Z   M 8 28 l 1 0 0 1 -1 0 Z         M 17 28 l 1 0 0 1 -1 0 Z M 18 28 l 1 0 0 1 -1 0 Z  M 20 28 l 1 0 0 1 -1 0 Z M 21 28 l 1 0 0 1 -1 0 Z     M 26 28 l 1 0 0 1 -1 0 Z       M 33 28 l 1 0 0 1 -1 0 Z  M 35 28 l 1 0 0 1 -1 0 Z  M 0 29 l 1 0 0 1 -1 0 Z M 1 29 l 1 0 0 1 -1 0 Z M 2 29 l 1 0 0 1 -1 0 Z M 3 29 l 1 0 0 1 -1 0 Z M 4 29 l 1 0 0 1 -1 0 Z M 5 29 l 1 0 0 1 -1 0 Z M 6 29 l 1 0 0 1 -1 0 Z M 7 29 l 1 0 0 1 -1 0 Z     M 12 29 l 1 0 0 1 -1 0 Z   M 15 29 l 1 0 0 1 -1 0 Z  M 17 29 l 1 0 0 1 -1 0 Z       M 24 29 l 1 0 0 1 -1 0 Z M 25 29 l 1 0 0 1 -1 0 Z M 26 29 l 1 0 0 1 -1 0 Z M 27 29 l 1 0 0 1 -1 0 Z  M 29 29 l 1 0 0 1 -1 0 Z M 30 29 l 1 0 0 1 -1 0 Z M 31 29 l 1 0 0 1 -1 0 Z  M 33 29 l 1 0 0 1 -1 0 Z M 34 29 l 1 0 0 1 -1 0 Z  M 36 29 l 1 0 0 1 -1 0 Z        M 7 30 l 1 0 0 1 -1 0 Z M 8 30 l 1 0 0 1 -1 0 Z M 9 30 l 1 0 0 1 -1 0 Z M 10 30 l 1 0 0 1 -1 0 Z M 11 30 l 1 0 0 1 -1 0 Z  M 13 30 l 1 0 0 1 -1 0 Z   M 16 30 l 1 0 0 1 -1 0 Z    M 20 30 l 1 0 0 1 -1 0 Z M 21 30 l 1 0 0 1 -1 0 Z M 22 30 l 1 0 0 1 -1 0 Z     M 27 30 l 1 0 0 1 -1 0 Z  M 29 30 l 1 0 0 1 -1 0 Z  M 31 30 l 1 0 0 1 -1 0 Z  M 33 30 l 1 0 0 1 -1 0 Z M 34 30 l 1 0 0 1 -1 0 Z    M 1 31 l 1 0 0 1 -1 0 Z M 2 31 l 1 0 0 1 -1 0 Z M 3 31 l 1 0 0 1 -1 0 Z M 4 31 l 1 0 0 1 -1 0 Z M 5 31 l 1 0 0 1 -1 0 Z  M 7 31 l 1 0 0 1 -1 0 Z M 8 31 l 1 0 0 1 -1 0 Z M 9 31 l 1 0 0 1 -1 0 Z M 10 31 l 1 0 0 1 -1 0 Z  M 12 31 l 1 0 0 1 -1 0 Z    M 16 31 l 1 0 0 1 -1 0 Z M 17 31 l 1 0 0 1 -1 0 Z M 18 31 l 1 0 0 1 -1 0 Z M 19 31 l 1 0 0 1 -1 0 Z M 20 31 l 1 0 0 1 -1 0 Z  M 22 31 l 1 0 0 1 -1 0 Z   M 25 31 l 1 0 0 1 -1 0 Z M 26 31 l 1 0 0 1 -1 0 Z   M 29 31 l 1 0 0 1 -1 0 Z M 30 31 l 1 0 0 1 -1 0 Z M 31 31 l 1 0 0 1 -1 0 Z  M 33 31 l 1 0 0 1 -1 0 Z M 34 31 l 1 0 0 1 -1 0 Z    M 1 32 l 1 0 0 1 -1 0 Z    M 5 32 l 1 0 0 1 -1 0 Z  M 7 32 l 1 0 0 1 -1 0 Z M 8 32 l 1 0 0 1 -1 0 Z   M 11 32 l 1 0 0 1 -1 0 Z M 12 32 l 1 0 0 1 -1 0 Z M 13 32 l 1 0 0 1 -1 0 Z M 14 32 l 1 0 0 1 -1 0 Z  M 16 32 l 1 0 0 1 -1 0 Z M 17 32 l 1 0 0 1 -1 0 Z  M 19 32 l 1 0 0 1 -1 0 Z    M 23 32 l 1 0 0 1 -1 0 Z M 24 32 l 1 0 0 1 -1 0 Z M 25 32 l 1 0 0 1 -1 0 Z        M 33 32 l 1 0 0 1 -1 0 Z  M 35 32 l 1 0 0 1 -1 0 Z   M 1 33 l 1 0 0 1 -1 0 Z    M 5 33 l 1 0 0 1 -1 0 Z  M 7 33 l 1 0 0 1 -1 0 Z M 8 33 l 1 0 0 1 -1 0 Z   M 11 33 l 1 0 0 1 -1 0 Z M 12 33 l 1 0 0 1 -1 0 Z  M 14 33 l 1 0 0 1 -1 0 Z M 15 33 l 1 0 0 1 -1 0 Z M 16 33 l 1 0 0 1 -1 0 Z  M 18 33 l 1 0 0 1 -1 0 Z M 19 33 l 1 0 0 1 -1 0 Z     M 24 33 l 1 0 0 1 -1 0 Z  M 26 33 l 1 0 0 1 -1 0 Z  M 28 33 l 1 0 0 1 -1 0 Z   M 31 33 l 1 0 0 1 -1 0 Z M 32 33 l 1 0 0 1 -1 0 Z M 33 33 l 1 0 0 1 -1 0 Z M 34 33 l 1 0 0 1 -1 0 Z M 35 33 l 1 0 0 1 -1 0 Z   M 1 34 l 1 0 0 1 -1 0 Z    M 5 34 l 1 0 0 1 -1 0 Z  M 7 34 l 1 0 0 1 -1 0 Z M 8 34 l 1 0 0 1 -1 0 Z  M 10 34 l 1 0 0 1 -1 0 Z   M 13 34 l 1 0 0 1 -1 0 Z  M 15 34 l 1 0 0 1 -1 0 Z M 16 34 l 1 0 0 1 -1 0 Z M 17 34 l 1 0 0 1 -1 0 Z  M 19 34 l 1 0 0 1 -1 0 Z   M 22 34 l 1 0 0 1 -1 0 Z M 23 34 l 1 0 0 1 -1 0 Z M 24 34 l 1 0 0 1 -1 0 Z    M 28 34 l 1 0 0 1 -1 0 Z M 29 34 l 1 0 0 1 -1 0 Z M 30 34 l 1 0 0 1 -1 0 Z M 31 34 l 1 0 0 1 -1 0 Z M 32 34 l 1 0 0 1 -1 0 Z  M 34 34 l 1 0 0 1 -1 0 Z    M 1 35 l 1 0 0 1 -1 0 Z M 2 35 l 1 0 0 1 -1 0 Z M 3 35 l 1 0 0 1 -1 0 Z M 4 35 l 1 0 0 1 -1 0 Z M 5 35 l 1 0 0 1 -1 0 Z  M 7 35 l 1 0 0 1 -1 0 Z M 8 35 l 1 0 0 1 -1 0 Z   M 11 35 l 1 0 0 1 -1 0 Z M 12 35 l 1 0 0 1 -1 0 Z M 13 35 l 1 0 0 1 -1 0 Z    M 17 35 l 1 0 0 1 -1 0 Z  M 19 35 l 1 0 0 1 -1 0 Z M 20 35 l 1 0 0 1 -1 0 Z M 21 35 l 1 0 0 1 -1 0 Z   M 24 35 l 1 0 0 1 -1 0 Z M 25 35 l 1 0 0 1 -1 0 Z    M 29 35 l 1 0 0 1 -1 0 Z  M 31 35 l 1 0 0 1 -1 0 Z   M 34 35 l 1 0 0 1 -1 0 Z M 35 35 l 1 0 0 1 -1 0 Z         M 7 36 l 1 0 0 1 -1 0 Z   M 10 36 l 1 0 0 1 -1 0 Z M 11 36 l 1 0 0 1 -1 0 Z  M 13 36 l 1 0 0 1 -1 0 Z  M 15 36 l 1 0 0 1 -1 0 Z M 16 36 l 1 0 0 1 -1 0 Z  M 18 36 l 1 0 0 1 -1 0 Z  M 20 36 l 1 0 0 1 -1 0 Z  M 22 36 l 1 0 0 1 -1 0 Z  M 24 36 l 1 0 0 1 -1 0 Z M 25 36 l 1 0 0 1 -1 0 Z M 26 36 l 1 0 0 1 -1 0 Z M 27 36 l 1 0 0 1 -1 0 Z   M 30 36 l 1 0 0 1 -1 0 Z  M 32 36 l 1 0 0 1 -1 0 Z M 33 36 l 1 0 0 1 -1 0 Z  M 35 36 l 1 0 0 1 -1 0 Z "
+                                          fill="#ffffff"
+                                        ></path>
+                                        <path
+                                          d="M 0 0 l 1 0 0 1 -1 0 Z M 1 0 l 1 0 0 1 -1 0 Z M 2 0 l 1 0 0 1 -1 0 Z M 3 0 l 1 0 0 1 -1 0 Z M 4 0 l 1 0 0 1 -1 0 Z M 5 0 l 1 0 0 1 -1 0 Z M 6 0 l 1 0 0 1 -1 0 Z        M 14 0 l 1 0 0 1 -1 0 Z M 15 0 l 1 0 0 1 -1 0 Z M 16 0 l 1 0 0 1 -1 0 Z   M 19 0 l 1 0 0 1 -1 0 Z M 20 0 l 1 0 0 1 -1 0 Z  M 22 0 l 1 0 0 1 -1 0 Z M 23 0 l 1 0 0 1 -1 0 Z   M 26 0 l 1 0 0 1 -1 0 Z    M 30 0 l 1 0 0 1 -1 0 Z M 31 0 l 1 0 0 1 -1 0 Z M 32 0 l 1 0 0 1 -1 0 Z M 33 0 l 1 0 0 1 -1 0 Z M 34 0 l 1 0 0 1 -1 0 Z M 35 0 l 1 0 0 1 -1 0 Z M 36 0 l 1 0 0 1 -1 0 Z M 0 1 l 1 0 0 1 -1 0 Z      M 6 1 l 1 0 0 1 -1 0 Z  M 8 1 l 1 0 0 1 -1 0 Z       M 15 1 l 1 0 0 1 -1 0 Z     M 20 1 l 1 0 0 1 -1 0 Z   M 23 1 l 1 0 0 1 -1 0 Z M 24 1 l 1 0 0 1 -1 0 Z M 25 1 l 1 0 0 1 -1 0 Z M 26 1 l 1 0 0 1 -1 0 Z  M 28 1 l 1 0 0 1 -1 0 Z  M 30 1 l 1 0 0 1 -1 0 Z      M 36 1 l 1 0 0 1 -1 0 Z M 0 2 l 1 0 0 1 -1 0 Z  M 2 2 l 1 0 0 1 -1 0 Z M 3 2 l 1 0 0 1 -1 0 Z M 4 2 l 1 0 0 1 -1 0 Z  M 6 2 l 1 0 0 1 -1 0 Z  M 8 2 l 1 0 0 1 -1 0 Z M 9 2 l 1 0 0 1 -1 0 Z M 10 2 l 1 0 0 1 -1 0 Z  M 12 2 l 1 0 0 1 -1 0 Z  M 14 2 l 1 0 0 1 -1 0 Z M 15 2 l 1 0 0 1 -1 0 Z   M 18 2 l 1 0 0 1 -1 0 Z   M 21 2 l 1 0 0 1 -1 0 Z  M 23 2 l 1 0 0 1 -1 0 Z     M 28 2 l 1 0 0 1 -1 0 Z  M 30 2 l 1 0 0 1 -1 0 Z  M 32 2 l 1 0 0 1 -1 0 Z M 33 2 l 1 0 0 1 -1 0 Z M 34 2 l 1 0 0 1 -1 0 Z  M 36 2 l 1 0 0 1 -1 0 Z M 0 3 l 1 0 0 1 -1 0 Z  M 2 3 l 1 0 0 1 -1 0 Z M 3 3 l 1 0 0 1 -1 0 Z M 4 3 l 1 0 0 1 -1 0 Z  M 6 3 l 1 0 0 1 -1 0 Z  M 8 3 l 1 0 0 1 -1 0 Z  M 10 3 l 1 0 0 1 -1 0 Z   M 13 3 l 1 0 0 1 -1 0 Z M 14 3 l 1 0 0 1 -1 0 Z   M 17 3 l 1 0 0 1 -1 0 Z   M 20 3 l 1 0 0 1 -1 0 Z   M 23 3 l 1 0 0 1 -1 0 Z M 24 3 l 1 0 0 1 -1 0 Z M 25 3 l 1 0 0 1 -1 0 Z   M 28 3 l 1 0 0 1 -1 0 Z  M 30 3 l 1 0 0 1 -1 0 Z  M 32 3 l 1 0 0 1 -1 0 Z M 33 3 l 1 0 0 1 -1 0 Z M 34 3 l 1 0 0 1 -1 0 Z  M 36 3 l 1 0 0 1 -1 0 Z M 0 4 l 1 0 0 1 -1 0 Z  M 2 4 l 1 0 0 1 -1 0 Z M 3 4 l 1 0 0 1 -1 0 Z M 4 4 l 1 0 0 1 -1 0 Z  M 6 4 l 1 0 0 1 -1 0 Z   M 9 4 l 1 0 0 1 -1 0 Z M 10 4 l 1 0 0 1 -1 0 Z M 11 4 l 1 0 0 1 -1 0 Z  M 13 4 l 1 0 0 1 -1 0 Z   M 16 4 l 1 0 0 1 -1 0 Z M 17 4 l 1 0 0 1 -1 0 Z  M 19 4 l 1 0 0 1 -1 0 Z M 20 4 l 1 0 0 1 -1 0 Z M 21 4 l 1 0 0 1 -1 0 Z M 22 4 l 1 0 0 1 -1 0 Z M 23 4 l 1 0 0 1 -1 0 Z       M 30 4 l 1 0 0 1 -1 0 Z  M 32 4 l 1 0 0 1 -1 0 Z M 33 4 l 1 0 0 1 -1 0 Z M 34 4 l 1 0 0 1 -1 0 Z  M 36 4 l 1 0 0 1 -1 0 Z M 0 5 l 1 0 0 1 -1 0 Z      M 6 5 l 1 0 0 1 -1 0 Z   M 9 5 l 1 0 0 1 -1 0 Z   M 12 5 l 1 0 0 1 -1 0 Z M 13 5 l 1 0 0 1 -1 0 Z   M 16 5 l 1 0 0 1 -1 0 Z M 17 5 l 1 0 0 1 -1 0 Z        M 25 5 l 1 0 0 1 -1 0 Z M 26 5 l 1 0 0 1 -1 0 Z    M 30 5 l 1 0 0 1 -1 0 Z      M 36 5 l 1 0 0 1 -1 0 Z M 0 6 l 1 0 0 1 -1 0 Z M 1 6 l 1 0 0 1 -1 0 Z M 2 6 l 1 0 0 1 -1 0 Z M 3 6 l 1 0 0 1 -1 0 Z M 4 6 l 1 0 0 1 -1 0 Z M 5 6 l 1 0 0 1 -1 0 Z M 6 6 l 1 0 0 1 -1 0 Z  M 8 6 l 1 0 0 1 -1 0 Z  M 10 6 l 1 0 0 1 -1 0 Z  M 12 6 l 1 0 0 1 -1 0 Z  M 14 6 l 1 0 0 1 -1 0 Z  M 16 6 l 1 0 0 1 -1 0 Z  M 18 6 l 1 0 0 1 -1 0 Z  M 20 6 l 1 0 0 1 -1 0 Z  M 22 6 l 1 0 0 1 -1 0 Z  M 24 6 l 1 0 0 1 -1 0 Z  M 26 6 l 1 0 0 1 -1 0 Z  M 28 6 l 1 0 0 1 -1 0 Z  M 30 6 l 1 0 0 1 -1 0 Z M 31 6 l 1 0 0 1 -1 0 Z M 32 6 l 1 0 0 1 -1 0 Z M 33 6 l 1 0 0 1 -1 0 Z M 34 6 l 1 0 0 1 -1 0 Z M 35 6 l 1 0 0 1 -1 0 Z M 36 6 l 1 0 0 1 -1 0 Z         M 8 7 l 1 0 0 1 -1 0 Z    M 12 7 l 1 0 0 1 -1 0 Z   M 15 7 l 1 0 0 1 -1 0 Z  M 17 7 l 1 0 0 1 -1 0 Z M 18 7 l 1 0 0 1 -1 0 Z    M 22 7 l 1 0 0 1 -1 0 Z M 23 7 l 1 0 0 1 -1 0 Z     M 28 7 l 1 0 0 1 -1 0 Z         M 0 8 l 1 0 0 1 -1 0 Z      M 6 8 l 1 0 0 1 -1 0 Z  M 8 8 l 1 0 0 1 -1 0 Z M 9 8 l 1 0 0 1 -1 0 Z M 10 8 l 1 0 0 1 -1 0 Z  M 12 8 l 1 0 0 1 -1 0 Z M 13 8 l 1 0 0 1 -1 0 Z  M 15 8 l 1 0 0 1 -1 0 Z M 16 8 l 1 0 0 1 -1 0 Z   M 19 8 l 1 0 0 1 -1 0 Z  M 21 8 l 1 0 0 1 -1 0 Z   M 24 8 l 1 0 0 1 -1 0 Z  M 26 8 l 1 0 0 1 -1 0 Z M 27 8 l 1 0 0 1 -1 0 Z  M 29 8 l 1 0 0 1 -1 0 Z M 30 8 l 1 0 0 1 -1 0 Z   M 33 8 l 1 0 0 1 -1 0 Z M 34 8 l 1 0 0 1 -1 0 Z M 35 8 l 1 0 0 1 -1 0 Z    M 2 9 l 1 0 0 1 -1 0 Z  M 4 9 l 1 0 0 1 -1 0 Z M 5 9 l 1 0 0 1 -1 0 Z  M 7 9 l 1 0 0 1 -1 0 Z   M 10 9 l 1 0 0 1 -1 0 Z M 11 9 l 1 0 0 1 -1 0 Z M 12 9 l 1 0 0 1 -1 0 Z  M 14 9 l 1 0 0 1 -1 0 Z  M 16 9 l 1 0 0 1 -1 0 Z  M 18 9 l 1 0 0 1 -1 0 Z      M 24 9 l 1 0 0 1 -1 0 Z  M 26 9 l 1 0 0 1 -1 0 Z M 27 9 l 1 0 0 1 -1 0 Z   M 30 9 l 1 0 0 1 -1 0 Z M 31 9 l 1 0 0 1 -1 0 Z M 32 9 l 1 0 0 1 -1 0 Z M 33 9 l 1 0 0 1 -1 0 Z  M 35 9 l 1 0 0 1 -1 0 Z  M 0 10 l 1 0 0 1 -1 0 Z M 1 10 l 1 0 0 1 -1 0 Z M 2 10 l 1 0 0 1 -1 0 Z M 3 10 l 1 0 0 1 -1 0 Z M 4 10 l 1 0 0 1 -1 0 Z  M 6 10 l 1 0 0 1 -1 0 Z  M 8 10 l 1 0 0 1 -1 0 Z  M 10 10 l 1 0 0 1 -1 0 Z M 11 10 l 1 0 0 1 -1 0 Z M 12 10 l 1 0 0 1 -1 0 Z M 13 10 l 1 0 0 1 -1 0 Z  M 15 10 l 1 0 0 1 -1 0 Z M 16 10 l 1 0 0 1 -1 0 Z M 17 10 l 1 0 0 1 -1 0 Z M 18 10 l 1 0 0 1 -1 0 Z M 19 10 l 1 0 0 1 -1 0 Z   M 22 10 l 1 0 0 1 -1 0 Z   M 25 10 l 1 0 0 1 -1 0 Z  M 27 10 l 1 0 0 1 -1 0 Z  M 29 10 l 1 0 0 1 -1 0 Z M 30 10 l 1 0 0 1 -1 0 Z  M 32 10 l 1 0 0 1 -1 0 Z M 33 10 l 1 0 0 1 -1 0 Z  M 35 10 l 1 0 0 1 -1 0 Z M 36 10 l 1 0 0 1 -1 0 Z M 0 11 l 1 0 0 1 -1 0 Z M 1 11 l 1 0 0 1 -1 0 Z M 2 11 l 1 0 0 1 -1 0 Z      M 8 11 l 1 0 0 1 -1 0 Z  M 10 11 l 1 0 0 1 -1 0 Z  M 12 11 l 1 0 0 1 -1 0 Z M 13 11 l 1 0 0 1 -1 0 Z      M 19 11 l 1 0 0 1 -1 0 Z M 20 11 l 1 0 0 1 -1 0 Z   M 23 11 l 1 0 0 1 -1 0 Z   M 26 11 l 1 0 0 1 -1 0 Z M 27 11 l 1 0 0 1 -1 0 Z M 28 11 l 1 0 0 1 -1 0 Z  M 30 11 l 1 0 0 1 -1 0 Z  M 32 11 l 1 0 0 1 -1 0 Z M 33 11 l 1 0 0 1 -1 0 Z   M 36 11 l 1 0 0 1 -1 0 Z M 0 12 l 1 0 0 1 -1 0 Z    M 4 12 l 1 0 0 1 -1 0 Z  M 6 12 l 1 0 0 1 -1 0 Z  M 8 12 l 1 0 0 1 -1 0 Z   M 11 12 l 1 0 0 1 -1 0 Z M 12 12 l 1 0 0 1 -1 0 Z   M 15 12 l 1 0 0 1 -1 0 Z M 16 12 l 1 0 0 1 -1 0 Z M 17 12 l 1 0 0 1 -1 0 Z   M 20 12 l 1 0 0 1 -1 0 Z M 21 12 l 1 0 0 1 -1 0 Z   M 24 12 l 1 0 0 1 -1 0 Z   M 27 12 l 1 0 0 1 -1 0 Z M 28 12 l 1 0 0 1 -1 0 Z  M 30 12 l 1 0 0 1 -1 0 Z M 31 12 l 1 0 0 1 -1 0 Z   M 34 12 l 1 0 0 1 -1 0 Z  M 36 12 l 1 0 0 1 -1 0 Z M 0 13 l 1 0 0 1 -1 0 Z M 1 13 l 1 0 0 1 -1 0 Z       M 8 13 l 1 0 0 1 -1 0 Z M 9 13 l 1 0 0 1 -1 0 Z M 10 13 l 1 0 0 1 -1 0 Z    M 14 13 l 1 0 0 1 -1 0 Z  M 16 13 l 1 0 0 1 -1 0 Z   M 19 13 l 1 0 0 1 -1 0 Z M 20 13 l 1 0 0 1 -1 0 Z M 21 13 l 1 0 0 1 -1 0 Z M 22 13 l 1 0 0 1 -1 0 Z M 23 13 l 1 0 0 1 -1 0 Z  M 25 13 l 1 0 0 1 -1 0 Z  M 27 13 l 1 0 0 1 -1 0 Z M 28 13 l 1 0 0 1 -1 0 Z   M 31 13 l 1 0 0 1 -1 0 Z  M 33 13 l 1 0 0 1 -1 0 Z    M 0 14 l 1 0 0 1 -1 0 Z M 1 14 l 1 0 0 1 -1 0 Z M 2 14 l 1 0 0 1 -1 0 Z M 3 14 l 1 0 0 1 -1 0 Z   M 6 14 l 1 0 0 1 -1 0 Z  M 8 14 l 1 0 0 1 -1 0 Z   M 11 14 l 1 0 0 1 -1 0 Z  M 13 14 l 1 0 0 1 -1 0 Z M 14 14 l 1 0 0 1 -1 0 Z M 15 14 l 1 0 0 1 -1 0 Z M 16 14 l 1 0 0 1 -1 0 Z  M 18 14 l 1 0 0 1 -1 0 Z  M 20 14 l 1 0 0 1 -1 0 Z  M 22 14 l 1 0 0 1 -1 0 Z    M 26 14 l 1 0 0 1 -1 0 Z M 27 14 l 1 0 0 1 -1 0 Z    M 31 14 l 1 0 0 1 -1 0 Z M 32 14 l 1 0 0 1 -1 0 Z M 33 14 l 1 0 0 1 -1 0 Z  M 35 14 l 1 0 0 1 -1 0 Z M 36 14 l 1 0 0 1 -1 0 Z  M 1 15 l 1 0 0 1 -1 0 Z  M 3 15 l 1 0 0 1 -1 0 Z M 4 15 l 1 0 0 1 -1 0 Z     M 9 15 l 1 0 0 1 -1 0 Z M 10 15 l 1 0 0 1 -1 0 Z M 11 15 l 1 0 0 1 -1 0 Z M 12 15 l 1 0 0 1 -1 0 Z  M 14 15 l 1 0 0 1 -1 0 Z M 15 15 l 1 0 0 1 -1 0 Z M 16 15 l 1 0 0 1 -1 0 Z    M 20 15 l 1 0 0 1 -1 0 Z M 21 15 l 1 0 0 1 -1 0 Z M 22 15 l 1 0 0 1 -1 0 Z M 23 15 l 1 0 0 1 -1 0 Z    M 27 15 l 1 0 0 1 -1 0 Z M 28 15 l 1 0 0 1 -1 0 Z M 29 15 l 1 0 0 1 -1 0 Z  M 31 15 l 1 0 0 1 -1 0 Z  M 33 15 l 1 0 0 1 -1 0 Z M 34 15 l 1 0 0 1 -1 0 Z M 35 15 l 1 0 0 1 -1 0 Z  M 0 16 l 1 0 0 1 -1 0 Z M 1 16 l 1 0 0 1 -1 0 Z  M 3 16 l 1 0 0 1 -1 0 Z M 4 16 l 1 0 0 1 -1 0 Z M 5 16 l 1 0 0 1 -1 0 Z M 6 16 l 1 0 0 1 -1 0 Z            M 18 16 l 1 0 0 1 -1 0 Z M 19 16 l 1 0 0 1 -1 0 Z M 20 16 l 1 0 0 1 -1 0 Z M 21 16 l 1 0 0 1 -1 0 Z M 22 16 l 1 0 0 1 -1 0 Z M 23 16 l 1 0 0 1 -1 0 Z M 24 16 l 1 0 0 1 -1 0 Z  M 26 16 l 1 0 0 1 -1 0 Z M 27 16 l 1 0 0 1 -1 0 Z M 28 16 l 1 0 0 1 -1 0 Z M 29 16 l 1 0 0 1 -1 0 Z M 30 16 l 1 0 0 1 -1 0 Z M 31 16 l 1 0 0 1 -1 0 Z   M 34 16 l 1 0 0 1 -1 0 Z  M 36 16 l 1 0 0 1 -1 0 Z      M 5 17 l 1 0 0 1 -1 0 Z   M 8 17 l 1 0 0 1 -1 0 Z  M 10 17 l 1 0 0 1 -1 0 Z M 11 17 l 1 0 0 1 -1 0 Z M 12 17 l 1 0 0 1 -1 0 Z M 13 17 l 1 0 0 1 -1 0 Z   M 16 17 l 1 0 0 1 -1 0 Z M 17 17 l 1 0 0 1 -1 0 Z    M 21 17 l 1 0 0 1 -1 0 Z  M 23 17 l 1 0 0 1 -1 0 Z  M 25 17 l 1 0 0 1 -1 0 Z M 26 17 l 1 0 0 1 -1 0 Z M 27 17 l 1 0 0 1 -1 0 Z M 28 17 l 1 0 0 1 -1 0 Z   M 31 17 l 1 0 0 1 -1 0 Z    M 35 17 l 1 0 0 1 -1 0 Z  M 0 18 l 1 0 0 1 -1 0 Z M 1 18 l 1 0 0 1 -1 0 Z     M 6 18 l 1 0 0 1 -1 0 Z M 7 18 l 1 0 0 1 -1 0 Z M 8 18 l 1 0 0 1 -1 0 Z M 9 18 l 1 0 0 1 -1 0 Z M 10 18 l 1 0 0 1 -1 0 Z M 11 18 l 1 0 0 1 -1 0 Z     M 16 18 l 1 0 0 1 -1 0 Z M 17 18 l 1 0 0 1 -1 0 Z M 18 18 l 1 0 0 1 -1 0 Z M 19 18 l 1 0 0 1 -1 0 Z    M 23 18 l 1 0 0 1 -1 0 Z    M 27 18 l 1 0 0 1 -1 0 Z  M 29 18 l 1 0 0 1 -1 0 Z    M 33 18 l 1 0 0 1 -1 0 Z M 34 18 l 1 0 0 1 -1 0 Z  M 36 18 l 1 0 0 1 -1 0 Z M 0 19 l 1 0 0 1 -1 0 Z M 1 19 l 1 0 0 1 -1 0 Z M 2 19 l 1 0 0 1 -1 0 Z  M 4 19 l 1 0 0 1 -1 0 Z   M 7 19 l 1 0 0 1 -1 0 Z    M 11 19 l 1 0 0 1 -1 0 Z M 12 19 l 1 0 0 1 -1 0 Z  M 14 19 l 1 0 0 1 -1 0 Z M 15 19 l 1 0 0 1 -1 0 Z M 16 19 l 1 0 0 1 -1 0 Z  M 18 19 l 1 0 0 1 -1 0 Z    M 22 19 l 1 0 0 1 -1 0 Z    M 26 19 l 1 0 0 1 -1 0 Z M 27 19 l 1 0 0 1 -1 0 Z M 28 19 l 1 0 0 1 -1 0 Z M 29 19 l 1 0 0 1 -1 0 Z M 30 19 l 1 0 0 1 -1 0 Z M 31 19 l 1 0 0 1 -1 0 Z     M 36 19 l 1 0 0 1 -1 0 Z M 0 20 l 1 0 0 1 -1 0 Z M 1 20 l 1 0 0 1 -1 0 Z   M 4 20 l 1 0 0 1 -1 0 Z  M 6 20 l 1 0 0 1 -1 0 Z M 7 20 l 1 0 0 1 -1 0 Z  M 9 20 l 1 0 0 1 -1 0 Z M 10 20 l 1 0 0 1 -1 0 Z M 11 20 l 1 0 0 1 -1 0 Z M 12 20 l 1 0 0 1 -1 0 Z M 13 20 l 1 0 0 1 -1 0 Z    M 17 20 l 1 0 0 1 -1 0 Z   M 20 20 l 1 0 0 1 -1 0 Z  M 22 20 l 1 0 0 1 -1 0 Z  M 24 20 l 1 0 0 1 -1 0 Z M 25 20 l 1 0 0 1 -1 0 Z M 26 20 l 1 0 0 1 -1 0 Z M 27 20 l 1 0 0 1 -1 0 Z M 28 20 l 1 0 0 1 -1 0 Z M 29 20 l 1 0 0 1 -1 0 Z M 30 20 l 1 0 0 1 -1 0 Z  M 32 20 l 1 0 0 1 -1 0 Z  M 34 20 l 1 0 0 1 -1 0 Z   M 0 21 l 1 0 0 1 -1 0 Z  M 2 21 l 1 0 0 1 -1 0 Z M 3 21 l 1 0 0 1 -1 0 Z M 4 21 l 1 0 0 1 -1 0 Z M 5 21 l 1 0 0 1 -1 0 Z     M 10 21 l 1 0 0 1 -1 0 Z     M 15 21 l 1 0 0 1 -1 0 Z  M 17 21 l 1 0 0 1 -1 0 Z  M 19 21 l 1 0 0 1 -1 0 Z   M 22 21 l 1 0 0 1 -1 0 Z M 23 21 l 1 0 0 1 -1 0 Z M 24 21 l 1 0 0 1 -1 0 Z  M 26 21 l 1 0 0 1 -1 0 Z M 27 21 l 1 0 0 1 -1 0 Z  M 29 21 l 1 0 0 1 -1 0 Z   M 32 21 l 1 0 0 1 -1 0 Z  M 34 21 l 1 0 0 1 -1 0 Z M 35 21 l 1 0 0 1 -1 0 Z  M 0 22 l 1 0 0 1 -1 0 Z M 1 22 l 1 0 0 1 -1 0 Z     M 6 22 l 1 0 0 1 -1 0 Z M 7 22 l 1 0 0 1 -1 0 Z   M 10 22 l 1 0 0 1 -1 0 Z  M 12 22 l 1 0 0 1 -1 0 Z M 13 22 l 1 0 0 1 -1 0 Z M 14 22 l 1 0 0 1 -1 0 Z M 15 22 l 1 0 0 1 -1 0 Z M 16 22 l 1 0 0 1 -1 0 Z M 17 22 l 1 0 0 1 -1 0 Z   M 20 22 l 1 0 0 1 -1 0 Z M 21 22 l 1 0 0 1 -1 0 Z    M 25 22 l 1 0 0 1 -1 0 Z M 26 22 l 1 0 0 1 -1 0 Z M 27 22 l 1 0 0 1 -1 0 Z M 28 22 l 1 0 0 1 -1 0 Z  M 30 22 l 1 0 0 1 -1 0 Z M 31 22 l 1 0 0 1 -1 0 Z M 32 22 l 1 0 0 1 -1 0 Z M 33 22 l 1 0 0 1 -1 0 Z  M 35 22 l 1 0 0 1 -1 0 Z M 36 22 l 1 0 0 1 -1 0 Z M 0 23 l 1 0 0 1 -1 0 Z  M 2 23 l 1 0 0 1 -1 0 Z   M 5 23 l 1 0 0 1 -1 0 Z     M 10 23 l 1 0 0 1 -1 0 Z  M 12 23 l 1 0 0 1 -1 0 Z M 13 23 l 1 0 0 1 -1 0 Z M 14 23 l 1 0 0 1 -1 0 Z M 15 23 l 1 0 0 1 -1 0 Z M 16 23 l 1 0 0 1 -1 0 Z M 17 23 l 1 0 0 1 -1 0 Z M 18 23 l 1 0 0 1 -1 0 Z M 19 23 l 1 0 0 1 -1 0 Z   M 22 23 l 1 0 0 1 -1 0 Z  M 24 23 l 1 0 0 1 -1 0 Z   M 27 23 l 1 0 0 1 -1 0 Z M 28 23 l 1 0 0 1 -1 0 Z M 29 23 l 1 0 0 1 -1 0 Z M 30 23 l 1 0 0 1 -1 0 Z M 31 23 l 1 0 0 1 -1 0 Z M 32 23 l 1 0 0 1 -1 0 Z M 33 23 l 1 0 0 1 -1 0 Z  M 35 23 l 1 0 0 1 -1 0 Z M 36 23 l 1 0 0 1 -1 0 Z M 0 24 l 1 0 0 1 -1 0 Z M 1 24 l 1 0 0 1 -1 0 Z M 2 24 l 1 0 0 1 -1 0 Z  M 4 24 l 1 0 0 1 -1 0 Z  M 6 24 l 1 0 0 1 -1 0 Z M 7 24 l 1 0 0 1 -1 0 Z     M 12 24 l 1 0 0 1 -1 0 Z M 13 24 l 1 0 0 1 -1 0 Z  M 15 24 l 1 0 0 1 -1 0 Z  M 17 24 l 1 0 0 1 -1 0 Z   M 20 24 l 1 0 0 1 -1 0 Z M 21 24 l 1 0 0 1 -1 0 Z M 22 24 l 1 0 0 1 -1 0 Z M 23 24 l 1 0 0 1 -1 0 Z M 24 24 l 1 0 0 1 -1 0 Z    M 28 24 l 1 0 0 1 -1 0 Z  M 30 24 l 1 0 0 1 -1 0 Z M 31 24 l 1 0 0 1 -1 0 Z M 32 24 l 1 0 0 1 -1 0 Z    M 36 24 l 1 0 0 1 -1 0 Z M 0 25 l 1 0 0 1 -1 0 Z   M 3 25 l 1 0 0 1 -1 0 Z  M 5 25 l 1 0 0 1 -1 0 Z  M 7 25 l 1 0 0 1 -1 0 Z M 8 25 l 1 0 0 1 -1 0 Z  M 10 25 l 1 0 0 1 -1 0 Z  M 12 25 l 1 0 0 1 -1 0 Z M 13 25 l 1 0 0 1 -1 0 Z M 14 25 l 1 0 0 1 -1 0 Z   M 17 25 l 1 0 0 1 -1 0 Z M 18 25 l 1 0 0 1 -1 0 Z  M 20 25 l 1 0 0 1 -1 0 Z M 21 25 l 1 0 0 1 -1 0 Z M 22 25 l 1 0 0 1 -1 0 Z   M 25 25 l 1 0 0 1 -1 0 Z M 26 25 l 1 0 0 1 -1 0 Z  M 28 25 l 1 0 0 1 -1 0 Z  M 30 25 l 1 0 0 1 -1 0 Z M 31 25 l 1 0 0 1 -1 0 Z      M 0 26 l 1 0 0 1 -1 0 Z     M 5 26 l 1 0 0 1 -1 0 Z M 6 26 l 1 0 0 1 -1 0 Z  M 8 26 l 1 0 0 1 -1 0 Z  M 10 26 l 1 0 0 1 -1 0 Z     M 15 26 l 1 0 0 1 -1 0 Z M 16 26 l 1 0 0 1 -1 0 Z M 17 26 l 1 0 0 1 -1 0 Z M 18 26 l 1 0 0 1 -1 0 Z M 19 26 l 1 0 0 1 -1 0 Z       M 26 26 l 1 0 0 1 -1 0 Z M 27 26 l 1 0 0 1 -1 0 Z   M 30 26 l 1 0 0 1 -1 0 Z M 31 26 l 1 0 0 1 -1 0 Z   M 34 26 l 1 0 0 1 -1 0 Z M 35 26 l 1 0 0 1 -1 0 Z M 36 26 l 1 0 0 1 -1 0 Z M 0 27 l 1 0 0 1 -1 0 Z  M 2 27 l 1 0 0 1 -1 0 Z M 3 27 l 1 0 0 1 -1 0 Z    M 7 27 l 1 0 0 1 -1 0 Z M 8 27 l 1 0 0 1 -1 0 Z M 9 27 l 1 0 0 1 -1 0 Z  M 11 27 l 1 0 0 1 -1 0 Z M 12 27 l 1 0 0 1 -1 0 Z M 13 27 l 1 0 0 1 -1 0 Z   M 16 27 l 1 0 0 1 -1 0 Z  M 18 27 l 1 0 0 1 -1 0 Z M 19 27 l 1 0 0 1 -1 0 Z     M 24 27 l 1 0 0 1 -1 0 Z    M 28 27 l 1 0 0 1 -1 0 Z M 29 27 l 1 0 0 1 -1 0 Z   M 32 27 l 1 0 0 1 -1 0 Z M 33 27 l 1 0 0 1 -1 0 Z M 34 27 l 1 0 0 1 -1 0 Z   M 0 28 l 1 0 0 1 -1 0 Z  M 2 28 l 1 0 0 1 -1 0 Z M 3 28 l 1 0 0 1 -1 0 Z   M 6 28 l 1 0 0 1 -1 0 Z M 7 28 l 1 0 0 1 -1 0 Z  M 9 28 l 1 0 0 1 -1 0 Z M 10 28 l 1 0 0 1 -1 0 Z M 11 28 l 1 0 0 1 -1 0 Z M 12 28 l 1 0 0 1 -1 0 Z M 13 28 l 1 0 0 1 -1 0 Z M 14 28 l 1 0 0 1 -1 0 Z M 15 28 l 1 0 0 1 -1 0 Z M 16 28 l 1 0 0 1 -1 0 Z   M 19 28 l 1 0 0 1 -1 0 Z   M 22 28 l 1 0 0 1 -1 0 Z M 23 28 l 1 0 0 1 -1 0 Z M 24 28 l 1 0 0 1 -1 0 Z M 25 28 l 1 0 0 1 -1 0 Z  M 27 28 l 1 0 0 1 -1 0 Z M 28 28 l 1 0 0 1 -1 0 Z M 29 28 l 1 0 0 1 -1 0 Z M 30 28 l 1 0 0 1 -1 0 Z M 31 28 l 1 0 0 1 -1 0 Z M 32 28 l 1 0 0 1 -1 0 Z  M 34 28 l 1 0 0 1 -1 0 Z  M 36 28 l 1 0 0 1 -1 0 Z         M 8 29 l 1 0 0 1 -1 0 Z M 9 29 l 1 0 0 1 -1 0 Z M 10 29 l 1 0 0 1 -1 0 Z M 11 29 l 1 0 0 1 -1 0 Z  M 13 29 l 1 0 0 1 -1 0 Z M 14 29 l 1 0 0 1 -1 0 Z  M 16 29 l 1 0 0 1 -1 0 Z  M 18 29 l 1 0 0 1 -1 0 Z M 19 29 l 1 0 0 1 -1 0 Z M 20 29 l 1 0 0 1 -1 0 Z M 21 29 l 1 0 0 1 -1 0 Z M 22 29 l 1 0 0 1 -1 0 Z M 23 29 l 1 0 0 1 -1 0 Z     M 28 29 l 1 0 0 1 -1 0 Z    M 32 29 l 1 0 0 1 -1 0 Z   M 35 29 l 1 0 0 1 -1 0 Z  M 0 30 l 1 0 0 1 -1 0 Z M 1 30 l 1 0 0 1 -1 0 Z M 2 30 l 1 0 0 1 -1 0 Z M 3 30 l 1 0 0 1 -1 0 Z M 4 30 l 1 0 0 1 -1 0 Z M 5 30 l 1 0 0 1 -1 0 Z M 6 30 l 1 0 0 1 -1 0 Z      M 12 30 l 1 0 0 1 -1 0 Z  M 14 30 l 1 0 0 1 -1 0 Z M 15 30 l 1 0 0 1 -1 0 Z  M 17 30 l 1 0 0 1 -1 0 Z M 18 30 l 1 0 0 1 -1 0 Z M 19 30 l 1 0 0 1 -1 0 Z    M 23 30 l 1 0 0 1 -1 0 Z M 24 30 l 1 0 0 1 -1 0 Z M 25 30 l 1 0 0 1 -1 0 Z M 26 30 l 1 0 0 1 -1 0 Z  M 28 30 l 1 0 0 1 -1 0 Z  M 30 30 l 1 0 0 1 -1 0 Z  M 32 30 l 1 0 0 1 -1 0 Z   M 35 30 l 1 0 0 1 -1 0 Z M 36 30 l 1 0 0 1 -1 0 Z M 0 31 l 1 0 0 1 -1 0 Z      M 6 31 l 1 0 0 1 -1 0 Z     M 11 31 l 1 0 0 1 -1 0 Z  M 13 31 l 1 0 0 1 -1 0 Z M 14 31 l 1 0 0 1 -1 0 Z M 15 31 l 1 0 0 1 -1 0 Z      M 21 31 l 1 0 0 1 -1 0 Z  M 23 31 l 1 0 0 1 -1 0 Z M 24 31 l 1 0 0 1 -1 0 Z   M 27 31 l 1 0 0 1 -1 0 Z M 28 31 l 1 0 0 1 -1 0 Z    M 32 31 l 1 0 0 1 -1 0 Z   M 35 31 l 1 0 0 1 -1 0 Z M 36 31 l 1 0 0 1 -1 0 Z M 0 32 l 1 0 0 1 -1 0 Z  M 2 32 l 1 0 0 1 -1 0 Z M 3 32 l 1 0 0 1 -1 0 Z M 4 32 l 1 0 0 1 -1 0 Z  M 6 32 l 1 0 0 1 -1 0 Z   M 9 32 l 1 0 0 1 -1 0 Z M 10 32 l 1 0 0 1 -1 0 Z     M 15 32 l 1 0 0 1 -1 0 Z   M 18 32 l 1 0 0 1 -1 0 Z  M 20 32 l 1 0 0 1 -1 0 Z M 21 32 l 1 0 0 1 -1 0 Z M 22 32 l 1 0 0 1 -1 0 Z    M 26 32 l 1 0 0 1 -1 0 Z M 27 32 l 1 0 0 1 -1 0 Z M 28 32 l 1 0 0 1 -1 0 Z M 29 32 l 1 0 0 1 -1 0 Z M 30 32 l 1 0 0 1 -1 0 Z M 31 32 l 1 0 0 1 -1 0 Z M 32 32 l 1 0 0 1 -1 0 Z  M 34 32 l 1 0 0 1 -1 0 Z  M 36 32 l 1 0 0 1 -1 0 Z M 0 33 l 1 0 0 1 -1 0 Z  M 2 33 l 1 0 0 1 -1 0 Z M 3 33 l 1 0 0 1 -1 0 Z M 4 33 l 1 0 0 1 -1 0 Z  M 6 33 l 1 0 0 1 -1 0 Z   M 9 33 l 1 0 0 1 -1 0 Z M 10 33 l 1 0 0 1 -1 0 Z   M 13 33 l 1 0 0 1 -1 0 Z    M 17 33 l 1 0 0 1 -1 0 Z   M 20 33 l 1 0 0 1 -1 0 Z M 21 33 l 1 0 0 1 -1 0 Z M 22 33 l 1 0 0 1 -1 0 Z M 23 33 l 1 0 0 1 -1 0 Z  M 25 33 l 1 0 0 1 -1 0 Z  M 27 33 l 1 0 0 1 -1 0 Z  M 29 33 l 1 0 0 1 -1 0 Z M 30 33 l 1 0 0 1 -1 0 Z      M 36 33 l 1 0 0 1 -1 0 Z M 0 34 l 1 0 0 1 -1 0 Z  M 2 34 l 1 0 0 1 -1 0 Z M 3 34 l 1 0 0 1 -1 0 Z M 4 34 l 1 0 0 1 -1 0 Z  M 6 34 l 1 0 0 1 -1 0 Z   M 9 34 l 1 0 0 1 -1 0 Z  M 11 34 l 1 0 0 1 -1 0 Z M 12 34 l 1 0 0 1 -1 0 Z  M 14 34 l 1 0 0 1 -1 0 Z    M 18 34 l 1 0 0 1 -1 0 Z  M 20 34 l 1 0 0 1 -1 0 Z M 21 34 l 1 0 0 1 -1 0 Z    M 25 34 l 1 0 0 1 -1 0 Z M 26 34 l 1 0 0 1 -1 0 Z M 27 34 l 1 0 0 1 -1 0 Z      M 33 34 l 1 0 0 1 -1 0 Z  M 35 34 l 1 0 0 1 -1 0 Z M 36 34 l 1 0 0 1 -1 0 Z M 0 35 l 1 0 0 1 -1 0 Z      M 6 35 l 1 0 0 1 -1 0 Z   M 9 35 l 1 0 0 1 -1 0 Z M 10 35 l 1 0 0 1 -1 0 Z    M 14 35 l 1 0 0 1 -1 0 Z M 15 35 l 1 0 0 1 -1 0 Z M 16 35 l 1 0 0 1 -1 0 Z  M 18 35 l 1 0 0 1 -1 0 Z    M 22 35 l 1 0 0 1 -1 0 Z M 23 35 l 1 0 0 1 -1 0 Z   M 26 35 l 1 0 0 1 -1 0 Z M 27 35 l 1 0 0 1 -1 0 Z M 28 35 l 1 0 0 1 -1 0 Z  M 30 35 l 1 0 0 1 -1 0 Z  M 32 35 l 1 0 0 1 -1 0 Z M 33 35 l 1 0 0 1 -1 0 Z   M 36 35 l 1 0 0 1 -1 0 Z M 0 36 l 1 0 0 1 -1 0 Z M 1 36 l 1 0 0 1 -1 0 Z M 2 36 l 1 0 0 1 -1 0 Z M 3 36 l 1 0 0 1 -1 0 Z M 4 36 l 1 0 0 1 -1 0 Z M 5 36 l 1 0 0 1 -1 0 Z M 6 36 l 1 0 0 1 -1 0 Z  M 8 36 l 1 0 0 1 -1 0 Z M 9 36 l 1 0 0 1 -1 0 Z   M 12 36 l 1 0 0 1 -1 0 Z  M 14 36 l 1 0 0 1 -1 0 Z   M 17 36 l 1 0 0 1 -1 0 Z  M 19 36 l 1 0 0 1 -1 0 Z  M 21 36 l 1 0 0 1 -1 0 Z  M 23 36 l 1 0 0 1 -1 0 Z     M 28 36 l 1 0 0 1 -1 0 Z M 29 36 l 1 0 0 1 -1 0 Z  M 31 36 l 1 0 0 1 -1 0 Z   M 34 36 l 1 0 0 1 -1 0 Z  M 36 36 l 1 0 0 1 -1 0 Z"
+                                          fill="#000000"
+                                        ></path>
+                                      </svg>
+                                    </div>
+                                    <div class="qrCodeOverlay_e16417">
+                                      <img
+                                        alt=""
+                                        src="assets/assets/dd05fd1ea37e7747.png"
+                                      />
+                                    </div>
+                                  </div>
+                                  <h2
+                                    class="heading-xl/semibold_cf4812 defaultColor__5345c title__921c5 marginBottom8_fd297e"
+                                    data-text-variant="heading-xl/semibold"
+                                    style="color: var(--text-strong)"
+                                  >
+                                    Log in with QR Code
+                                  </h2>
+                                  <div
+                                    class="text-md/normal_cf4812"
+                                    data-text-variant="text-md/normal"
+                                    style="color: var(--text-default)"
+                                  >
+                                    Scan this with the
+                                    <strong>Discord mobile app</strong> to log
+                                    in instantly.
+                                  </div>
+                                  <div
+                                    data-align="center"
+                                    data-justify="start"
+                                    data-direction="vertical"
+                                    data-wrap="false"
+                                    data-full-width="true"
+                                    class="stack_dbd263"
+                                    style="
+                                      gap: var(--space-8);
+                                      padding: var(--space-8);
+                                    "
+                                  >
+                                    <button
+                                      class="textButton__7a01b primary__7a01b"
+                                      data-mana-component="text-button"
+                                      role="button"
+                                      type="button"
+                                    >
+                                      <span
+                                        class="lineClamp1__4bd52 text-sm/normal_cf4812 text__7a01b"
+                                        data-text-variant="text-sm/normal"
+                                        >Or, sign in with passkey</span
+                                      >
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layerContainer__59d0d">
+            <div class="pictureInPicture__6341f"></div>
+          </div>
+          <div id="cash-app-pay-container"></div>
+          <div></div>
+          <div id="popover-portal"></div>
+          <div class="layerContainer__59d0d"></div>
+          <div class="layerContainer__59d0d"></div>
+          <div class="containerTop__45edc"></div>
+          <canvas class="canvas_eb6eba" width="1280" height="900"></canvas
+          ><canvas
+            width="240"
+            height="240"
+            style="
+              display: none;
+              position: absolute;
+              width: 0px;
+              height: 0px;
+              left: -100%;
+            "
+          ></canvas>
+        </div>
+      </div>
+      <div style="position: fixed; opacity: 0; pointer-events: none"></div>
+      <div></div>
+    </div>
+
+    <iframe
+      height="1"
+      width="1"
+      style="
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-width: medium;
+        border-style: none;
+        border-color: currentcolor;
+        border-image: initial;
+        visibility: hidden;
+      "
+    ></iframe>
+    <div
+      class="drag-previewer"
+      style="
+        z-index: 1000;
+        filter: drop-shadow(0 0 0 var(--background-surface-high))
+          drop-shadow(var(--elevation-high));
+      "
+    >
+      <svg style="contain: paint">
+        <foreignObject></foreignObject>
+      </svg>
+    </div>
+    <div id="uid_1" style="display: none">,</div>
+    <div id="uid_2" style="display: none">,</div>
+    <div id="uid_3" style="display: none">Reactions</div>
+    <div id="uid_4" style="display: none">Official message</div>
+    <div id="uid_5" style="display: none">click to open image dialog</div>
+  </body>
+</html>
