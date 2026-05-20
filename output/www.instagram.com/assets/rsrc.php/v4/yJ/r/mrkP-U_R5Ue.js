@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("PolarisCAAIGAccountRecoverySearchRoot.entrypoint",["CAAIGAccountSearchViewContentQuery$Parameters","JSResourceForInteraction"],(function(t,n,r,o,a,i,l){"use strict";var e={getPreloadProps:function(t){return{queries:{AccountSearchViewContentQuery:{parameters:r("CAAIGAccountSearchViewContentQuery$Parameters"),variables:{}}}}},root:r("JSResourceForInteraction")("PolarisCAAIGAccountRecoverySearchRoot.react").__setRef("PolarisCAAIGAccountRecoverySearchRoot.entrypoint")};l.default=e}),98);
