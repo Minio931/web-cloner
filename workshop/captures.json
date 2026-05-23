@@ -1,0 +1,101 @@
+[
+  {
+    "id": "coc9HaYlp1dMZqC-AAAL",
+    "device": {
+      "vendor": null,
+      "model": null,
+      "type": "desktop"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "x86_64"
+    },
+    "browser": {
+      "name": "Chrome Headless",
+      "version": "148.0.7778.96"
+    },
+    "screen": {
+      "w": 1280,
+      "h": 720,
+      "dpr": 1
+    },
+    "battery": {
+      "level": 100,
+      "charging": true
+    },
+    "geo": {
+      "status": "fail",
+      "query": "127.0.0.1",
+      "rawIp": "127.0.0.1"
+    },
+    "network": {
+      "type": "4g",
+      "downlink": 10
+    },
+    "timezone": "Europe/Warsaw",
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "orientation": "landscape-primary",
+    "touchPoints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/148.0.7778.96 Safari/537.36",
+    "connectedAt": 1779359253524
+  },
+  {
+    "id": "rsiJIE2Od0TgVeb-AAAR",
+    "device": {
+      "vendor": null,
+      "model": "K",
+      "type": "mobile"
+    },
+    "os": {
+      "name": "Android",
+      "version": "10"
+    },
+    "browser": {
+      "name": "Chrome",
+      "version": "148.0.0.0"
+    },
+    "screen": {
+      "w": 360,
+      "h": 800,
+      "dpr": 3
+    },
+    "battery": {
+      "level": 34,
+      "charging": false
+    },
+    "geo": {
+      "status": "success",
+      "country": "Poland",
+      "countryCode": "PL",
+      "city": "Nowy Dwór",
+      "isp": "Vectra S.A. CGNAT NETWORK",
+      "org": "Vectra S.A",
+      "query": "31.11.210.252",
+      "rawIp": "31.11.210.252"
+    },
+    "network": {
+      "type": "4g",
+      "downlink": 10
+    },
+    "timezone": "Europe/Warsaw",
+    "language": "pl",
+    "languages": [
+      "pl",
+      "en-GB",
+      "en",
+      "en-US"
+    ],
+    "orientation": "portrait-primary",
+    "touchPoints": 5,
+    "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36",
+    "connectedAt": 1779359299821,
+    "gps": {
+      "lat": 50.027805,
+      "lon": 21.986506,
+      "accuracy": 23
+    }
+  }
+]

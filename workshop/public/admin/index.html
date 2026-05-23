@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel — Captures</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --green: #00ff41;
+      --red: #ff3b3b;
+      --yellow: #ffd60a;
+      --blue: #0af;
+      --bg: #080808;
+      --card: #0f0f0f;
+      --border: #1c1c1c;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--green);
+      font-family: "JetBrains Mono", monospace;
+      min-height: 100vh;
+    }
+
+    #matrix {
+      position: fixed;
+      top: 0; left: 0;
+      opacity: 0.04;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 20px 24px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+      margin-bottom: 24px;
+    }
+
+    .title { font-size: 20px; font-weight: 700; letter-spacing: 3px; }
+    .title em { color: var(--red); font-style: normal; }
+
+    .header-right { display: flex; align-items: center; gap: 16px; font-size: 12px; color: #444; letter-spacing: 1px; }
+    .header-right .count { color: var(--green); font-size: 18px; font-weight: 700; }
+
+    .dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--red);
+      animation: pulse 1s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+    #empty {
+      text-align: center;
+      padding: 100px 20px;
+      color: #333;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    #empty .eye { font-size: 64px; margin-bottom: 20px; }
+
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card.new {
+      border-color: var(--red);
+      animation: cardIn 0.4s ease, flashRed 1.5s ease;
+    }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(-12px) scale(0.97); }
+      to   { opacity: 1; transform: none; }
+    }
+    @keyframes flashRed {
+      0%,100% { box-shadow: none; }
+      40%     { box-shadow: 0 0 50px rgba(255,59,59,.5); }
+    }
+
+    .card-header {
+      background: #0d0d0d;
+      border-bottom: 1px solid var(--border);
+      padding: 9px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #333;
+    }
+    .card-header .time { color: #555; }
+
+    .card-body { padding: 12px 14px; }
+
+    .row { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+
+    .block {
+      background: #0a0a0a;
+      border: 1px solid #161616;
+      border-radius: 6px;
+      padding: 9px 11px;
+      flex: 1;
+      min-width: 120px;
+    }
+    .block.wide { flex: 2; }
+    .block.full { flex: 100; }
+
+    .lbl {
+      font-size: 9px;
+      color: #3a3a3a;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .val { font-size: 14px; color: var(--green); font-weight: 700; }
+    .val.yellow { color: var(--yellow); }
+    .val.red    { color: var(--red); }
+    .val.blue   { color: var(--blue); }
+    .sub { font-size: 11px; color: #3a3a3a; margin-top: 2px; }
+
+    .bat-bar {
+      height: 5px;
+      background: #1a1a1a;
+      border-radius: 3px;
+      margin-top: 5px;
+      overflow: hidden;
+    }
+    .bat-fill { height: 100%; border-radius: 3px; }
+    .bat-fill.hi  { background: var(--green); }
+    .bat-fill.mid { background: var(--yellow); }
+    .bat-fill.lo  { background: var(--red); }
+
+    .ua-string {
+      font-size: 10px;
+      color: #252525;
+      word-break: break-all;
+      line-height: 1.6;
+      border-top: 1px solid #131313;
+      padding-top: 7px;
+      margin-top: 4px;
+    }
+
+    #alert-popup {
+      position: fixed;
+      top: 20px; right: 20px;
+      background: #100000;
+      border: 2px solid var(--red);
+      border-radius: 10px;
+      padding: 16px 24px;
+      z-index: 9999;
+      transform: translateX(130%);
+      transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+      box-shadow: 0 0 40px rgba(255,59,59,.35);
+      min-width: 280px;
+    }
+    #alert-popup.show { transform: translateX(0); }
+    #alert-popup .alert-title { font-size: 20px; font-weight: 700; color: var(--red); letter-spacing: 2px; margin-bottom: 4px; }
+    #alert-popup .alert-sub  { font-size: 12px; color: #ff7070; }
+  </style>
+</head>
+<body>
+<canvas id="matrix"></canvas>
+
+<div id="alert-popup">
+  <div class="alert-title">⚠ NOWY ZAPIS</div>
+  <div class="alert-sub" id="alert-sub"></div>
+</div>
+
+<div class="container">
+  <header>
+    <div class="title">CAPTURES <em>LOG</em></div>
+    <div class="header-right">
+      <span class="count" id="count">0</span> ZAPISÓW
+      &nbsp;<div class="dot"></div>
+    </div>
+  </header>
+
+  <div id="empty">
+    <div class="eye">👁</div>
+    BRAK ZAPISÓW
+  </div>
+
+  <div id="grid"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  // Matrix rain
+  const canvas = document.getElementById("matrix");
+  const ctx = canvas.getContext("2d");
+  function resizeCanvas() { canvas.width = innerWidth; canvas.height = innerHeight; }
+  resizeCanvas();
+  addEventListener("resize", resizeCanvas);
+  let drops = Array(Math.floor(innerWidth / 16)).fill(1);
+  setInterval(() => {
+    const c = Math.floor(canvas.width / 16);
+    while (drops.length < c) drops.push(1);
+    ctx.fillStyle = "rgba(0,0,0,0.06)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#00ff41";
+    ctx.font = "13px monospace";
+    drops.forEach((y, i) => {
+      ctx.fillText(String.fromCharCode(0x30a0 + Math.random() * 96), i * 16, y * 16);
+      drops[i] = y > canvas.height / 16 && Math.random() > 0.975 ? 0 : y + 1;
+    });
+  }, 60);
+
+  // Helpers
+  let totalCount = 0;
+
+  function batClass(l) { return l > 50 ? "hi" : l > 20 ? "mid" : "lo"; }
+
+  function deviceName(d) {
+    if (!d) return "Nieznane";
+    if (d.vendor && d.model) return `${d.vendor} ${d.model}`;
+    return { mobile: "Smartfon", tablet: "Tablet", desktop: "Komputer" }[d.type] || "Urządzenie";
+  }
+
+  function showAlert(text) {
+    const el = document.getElementById("alert-popup");
+    document.getElementById("alert-sub").textContent = text;
+    el.classList.add("show");
+    setTimeout(() => el.classList.remove("show"), 4000);
+  }
+
+  function cardHTML(entry) {
+    const { id, device: dev = {}, os = {}, browser: br = {}, screen: scr = {},
+            battery: bat, geo = {}, network: net = {}, gps,
+            timezone, language, ua, connectedAt } = entry;
+
+    const batLvl  = bat?.level ?? null;
+    const ip      = geo.query || geo.rawIp || "—";
+    const isp     = geo.isp || "—";
+    const loc     = [geo.city, geo.country].filter(Boolean).join(", ") || "—";
+    const osStr   = `${os.name || "?"} ${os.version || ""}`.trim();
+    const brStr   = `${br.name || "?"} ${br.version || ""}`.trim();
+    const res     = scr.w ? `${scr.w}×${scr.h} @${scr.dpr}x` : "—";
+    const netStr  = net.type ? `${net.type}${net.downlink ? ` · ${net.downlink} Mbps` : ""}` : "—";
+    const gpsStr  = gps ? `${gps.lat.toFixed(5)}, ${gps.lon.toFixed(5)}` : null;
+    const gpsLink = gps ? `https://www.google.com/maps?q=${gps.lat},${gps.lon}` : null;
+    const time    = connectedAt ? new Date(connectedAt).toLocaleString("pl") : "—";
+    const shortId = (id || "???").slice(0, 12);
+
+    return `
+      <div class="card-header">
+        <span>${shortId}…</span>
+        <span class="time">${time}</span>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="block wide">
+            <div class="lbl">Urządzenie</div>
+            <div class="val yellow">${deviceName(dev)}</div>
+            <div class="sub">${osStr} · ${brStr}</div>
+          </div>
+          <div class="block">
+            <div class="lbl">Bateria</div>
+            <div class="val ${batLvl !== null && batLvl < 20 ? "red" : ""}">
+              ${batLvl !== null ? `${batLvl}%${bat.charging ? " ⚡" : ""}` : "—"}
+            </div>
+            ${batLvl !== null ? `<div class="bat-bar"><div class="bat-fill ${batClass(batLvl)}" style="width:${batLvl}%"></div></div>` : ""}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="block">
+            <div class="lbl">Adres IP</div>
+            <div class="val blue">${ip}</div>
+          </div>
+          <div class="block wide">
+            <div class="lbl">Operator / Lokalizacja</div>
+            <div class="val">${isp}</div>
+            <div class="sub">${loc}</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="block">
+            <div class="lbl">Rozdzielczość</div>
+            <div class="val" style="font-size:12px">${res}</div>
+          </div>
+          <div class="block">
+            <div class="lbl">Sieć</div>
+            <div class="val" style="font-size:12px">${netStr}</div>
+          </div>
+          <div class="block">
+            <div class="lbl">Strefa / Język</div>
+            <div class="val" style="font-size:11px">${timezone || "—"}</div>
+            <div class="sub">${language || "—"}</div>
+          </div>
+        </div>
+
+        ${gpsStr ? `
+        <div class="row">
+          <div class="block full">
+            <div class="lbl">GPS</div>
+            <div class="val blue" style="font-size:12px">
+              <a href="${gpsLink}" target="_blank" style="color:inherit;text-decoration:none">📍 ${gpsStr}</a>
+            </div>
+            <div class="sub">dokładność: ~${gps.accuracy} m</div>
+          </div>
+        </div>` : ""}
+
+        <div class="ua-string">${ua || ""}</div>
+      </div>
+    `;
+  }
+
+  function addCard(entry, isNew = false) {
+    document.getElementById("empty").style.display = "none";
+    totalCount++;
+    document.getElementById("count").textContent = totalCount;
+
+    const wrap = document.createElement("div");
+    wrap.className = "card" + (isNew ? " new" : "");
+    wrap.innerHTML = cardHTML(entry);
+    document.getElementById("grid").prepend(wrap);
+    if (isNew) setTimeout(() => wrap.classList.remove("new"), 2500);
+  }
+
+  // Załaduj istniejące zapisy
+  fetch("/api/captures")
+    .then(r => r.json())
+    .then(data => data.slice().reverse().forEach(e => addCard(e, false)))
+    .catch(() => {});
+
+  // Nasłuchuj nowych
+  const socket = io();
+  socket.emit("join-admin");
+
+  socket.on("new-capture", (entry) => {
+    addCard(entry, true);
+    const dev = entry.device;
+    showAlert(`${deviceName(dev)} · ${entry.os?.name || "?"} · ${entry.geo?.isp || entry.geo?.rawIp || "?"}`);
+  });
+</script>
+</body>
+</html>

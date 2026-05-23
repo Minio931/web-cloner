@@ -1,0 +1,15 @@
+{
+  "name": "workshop-fingerprint",
+  "version": "1.0.0",
+  "description": "Demonstracja fingerprintingu przegladarek - warsztat edukacyjny",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "qr": "node generate-qr.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "qrcode": "^1.5.3",
+    "socket.io": "^4.7.2"
+  }
+}
